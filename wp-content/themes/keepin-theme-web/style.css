@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*
+Theme Name: Keepin -  Theme Web
+Theme URI: https://www.keepinagency.com/
+Author: Team Keepin
+Author URI: https://www.keepinagency.com/
+Description: Primera versión del tema para la Web de Keepin. Uso exclusivo de TeamKeep 
+Version: 0.0.1 
+Text Domain: KeepinAgency
+WordPress Available:  yes
+*/
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+/** Override Bootstrap's default container. **/
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0px;
+    margin: 0px;
+    /*width: 100%;
+    /*border: thin solid #B0B;*/
+  }
+  .row{
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/***************** Comportamiento responsive *********************/
+@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+    .imglogo{
+        height: 40px !important;
+       
+    }
+    .burger{
+      text-align: left;
+    }
+    .header-menu li{
+        
+        font-size: 1.2em !important;
+        border-bottom: solid 1px;
+    }
+    .header-menu a{
+      color: black ;
+    }
+    .area-menu{
+      border-bottom: none;
+      
+    }
+    .area-menufoot{
+      display: none;
+    }
+    .btn-home{
+      background-color: #75b976;
+      width: 170px;
+      height: 55px;
+    }
+}
+/**************************************************************
+.header-menu li{
+  text-decoration: none;
+  font-size: 2em;
+  display: block !important;
+  padding: 10px;
+}
+.header-menu a{
+  color: black ;
+}
+.area-menu{
+  float: right;
+}
+.area-menufoot{
+  display: none;
+}
+.header{
+  border: thin solid#333;
+}
+.imglogo{
+  border: thin solid rgb(175, 55, 55);
+}**************/
