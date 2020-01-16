@@ -1,5 +1,5 @@
 <div class="row col-xs-12 d-lg-none p-0 m-0 border">
-    <div class="col-4 mt-2"> <img src="\img\Iconos\multi_platform.png">hola </div>
+    <div class="col-4 mt-2"> hola </div>
     <div class="col-4 mt-2">hey</div>
     <div class="col-12 mt-2">We build solutions </div>
     

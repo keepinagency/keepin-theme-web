@@ -1,4 +1,4 @@
-<!--/div><!-- /.row -->
+<!--/div--><!-- /.row -->
 </div><!-- /.container -->
 <footer class="footer">
 	<div class="area-menufoot col-sm-4">

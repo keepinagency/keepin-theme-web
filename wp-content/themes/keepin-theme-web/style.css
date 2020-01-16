@@ -23,7 +23,7 @@ h6, .h6 {
   margin-top: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #333;
+  /*color: #333;*/
 }
 
 /** Override Bootstrap's default container. **/
@@ -69,6 +69,28 @@ h6, .h6 {
       width: 170px;
       height: 55px;
     }
+    .btn-home-team{
+      background-color: #2f5961;
+      width: 100% !important;
+      height: 100%;
+    }
+    .portfolio{
+      background-color: #413a4d;
+    }
+    .titulo_portfolio
+    .post_portfolio{
+      background-color: #413a4d;
+    }
+    .titulo_services{
+      color: #75b976;
+    }
+    .post_services{
+      color: #413a4d;
+    }
+    .home-team{
+      background-color:#65c1d1 !important;
+    }
+
 }
 /**************************************************************
 .header-menu li{
