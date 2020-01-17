@@ -9,9 +9,31 @@ Version: 0.0.1
 Text Domain: KeepinAgency
 WordPress Available:  yes
 */
-/*definir em en 14 utilizar fuente roboto*/
+/** Definición de fuentes locales **/
+@font-face {
+  font-family: 'Conv_RobotoBoldCondensed';
+  src: url('fonts/Roboto/Roboto-BoldCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Conv_RobotoRegular';
+  src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Conv_RobotoCriketCondensed';
+  src: url('fonts/Roboto/Roboto-Condensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Conv_RobotoLightItalic';
+  src: url('fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+}
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /*font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;*/
+  font-size: 14pt;
 }
 
 h1, .h1,
@@ -77,9 +99,11 @@ h6, .h6 {
     .portfolio{
       background-color: #413a4d;
     }
-    .titulo_portfolio
+    .titulo_portfolio{
+      font-size: 2.15em;
+    }
     .post_portfolio{
-      background-color: #413a4d;
+      font-size: 1.6em;
     }
     .titulo_services{
       color: #75b976;
@@ -89,6 +113,9 @@ h6, .h6 {
     }
     .home-team{
       background-color:#65c1d1 !important;
+    }
+    .team{
+      font-size: 1em; 
     }
 
 }
