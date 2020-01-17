@@ -1,3 +1,4 @@
+<!--Luego de header-->
 <div class="row col-xs-12 d-lg-none p-0 m-0 border">
     <div class="col-4 mt-2"> hola </div>
     <div class="col-4 mt-2">hey</div>
