@@ -54,19 +54,153 @@ function keepin_register_menu() {
 *****************************************************/
 function custom_keepinagency_register( $wp_customize ) {
 
-    /** Panel de opciones para el personalizador **/
+    /** Panel OPCIONES KEEPIN HOME para el personalizador **/
     $wp_customize->add_panel( 'keepinagency', array(
-        'title' => 'Opciones KeepIn',
+        'title' => 'KeepIn Home',
         'description' => 'Opciones personales',
         'priority' => 1,
     ));
+
     /******* SECCIÓN PARA SOCIALMEDIA FOOTER **********/
     $wp_customize->add_section( 'SocialMediaFoot', array(
-        'title' => __( 'Sección Social Media', 'textdomain' ),
+        'title' => __( 'Social Media Footer', 'textdomain' ),
         'panel' => 'keepinagency',
         'priority' => 1,
     ));
+
+    /******* SECCIÓN PARA BTN HOME 01**********/
+    $wp_customize->add_section( 'green', array(
+        'title' => __( 'Boton Home 01 - Green', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' => 2,
+    ));
+
+    /******* SECCIÓN PARA BTN HOME 02**********/
+    $wp_customize->add_section( 'grey', array(
+        'title' => __( 'Boton Home 02 - Gray', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' => 3,
+    ));
     
+    /******* SECCIÓN PARA BTN HOME 02**********/
+    $wp_customize->add_section( 'blue', array(
+        'title' => __( 'Boton Home 03 - Blue', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' => 3,
+    ));
+    
+    /******* SETTING & CONTROL PARA SECCIONES**********/
+
+     /** Setting CTA-TXT *********
+      **    HOME 01      ********/
+     $wp_customize->add_setting( 'txt-cta-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-cta-green', array(
+        'label' => __( 'Texto CTA Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 1,
+        'type' => 'textarea',
+    ));
+    /** Setting BTN-URL *********
+     **     HOME 01     ********/
+    $wp_customize->add_setting( 'url-btn-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('url-btn-green', array(
+        'label' => __( 'URL CTA Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    /** Setting BTN-TXT *********
+     **      HOME 01    ********/
+    $wp_customize->add_setting( 'txt-btn-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-btn-green', array(
+        'label' => __( 'Texto boton Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 3,
+        'type' => 'text',
+    ));
+    /** Setting CTA-TXT *********
+     **      HOME 02    ********/
+    $wp_customize->add_setting( 'txt-cta-grey', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-cta-grey', array(
+        'label' => __( 'Texto CTA Home 02 - Grey', 'textdomain' ),
+        'section' => 'grey',
+        'priority' => 1,
+        'type' => 'textarea',
+    ));
+    /** Setting BTN-URL *********
+     **      HOME 02    ********/
+    $wp_customize->add_setting( 'url-btn-grey', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('url-btn-grey', array(
+        'label' => __( 'URL CTA Home 02 - Grey', 'textdomain' ),
+        'section' => 'grey',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    /** Setting BTN-TXT *********
+     **      HOME 02    ********/
+    $wp_customize->add_setting( 'txt-btn-grey', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-btn-grey', array(
+        'label' => __( 'Texto boton Home 02 - Grey', 'textdomain' ),
+        'section' => 'grey',
+        'priority' => 3,
+        'type' => 'text',
+    ));
+
+    /** Setting CTA-TXT *********
+     **      HOME 03    ********/
+    $wp_customize->add_setting( 'txt-cta-blue', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-cta-blue', array(
+        'label' => __( 'Texto CTA Home 03 - Blue', 'textdomain' ),
+        'section' => 'blue',
+        'priority' => 1,
+        'type' => 'textarea',
+    ));
+    /** Setting BTN-URL *********
+     **      HOME 03    ********/
+    $wp_customize->add_setting( 'url-btn-bue', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('url-btn-bue', array(
+        'label' => __( 'URL CTA Home 03 - Blue', 'textdomain' ),
+        'section' => 'blue',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    /** Setting BTN-TXT *********
+     **      HOME 03    ********/
+    $wp_customize->add_setting( 'txt-btn-blue', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-btn-blue', array(
+        'label' => __( 'Texto boton Home 03 - Blue', 'textdomain' ),
+        'section' => 'blue',
+        'priority' => 3,
+        'type' => 'text',
+    ));
+
     /** Setting Insta Icono **/
     $wp_customize->add_setting( 'instalogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-instagram.png',

@@ -1,5 +1,5 @@
 <?php
-/*Plantilla slider home*/
+/*Plantilla slider home por ahora no se usa*/
 $posts_slide = new WP_Query(array(
     'post_type' => 'post',
     'category_name' => 'slider-home',

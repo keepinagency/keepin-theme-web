@@ -103,6 +103,19 @@ h6, .h6 {
     .home-team{
       background-color:#65c1d1 !important;
     }
+    .home-green{
+      background-color:#75b976 !important;
+    }
+    .green{
+      font-size: 1.6em; 
+      font-family: "Conv_RobotoCondensed";
+    }
+    .btn-home-green{
+      color:#413a4d;
+      background-color: #e0e0e0;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.4em;
+    }
     .team{
       font-size: 1.6em; 
       font-family: "Conv_RobotoCondensed";
