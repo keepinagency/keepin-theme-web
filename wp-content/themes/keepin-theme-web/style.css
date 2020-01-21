@@ -82,10 +82,18 @@ h6, .h6 {
     .area-menufoot{
       display: none;
     }
-    .btn-home{
+    .txt-home-start{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.8em;
+    }
+    .btn-home-start{
       background-color: #75b976;
       width: 170px;
       height: 55px;
+    }
+    .btn-txt-home-start{
+      font-size: 1.4em;
+      font-family: "Conv_RobotoBoldCondensed";
     }
     .btn-home-team{
       background-color: #2f5961;
@@ -104,9 +112,11 @@ h6, .h6 {
     }
     .titulo_portfolio{
       font-size: 2.15em;
+      font-family: "Conv_RobotoBoldCondensed";
     }
     .post_portfolio{
       font-size: 1.6em;
+      font-family: "Conv_RobotoCondensed";
     }
     .titulo_services{
       color: #75b976;
