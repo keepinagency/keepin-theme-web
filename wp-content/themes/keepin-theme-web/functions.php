@@ -50,10 +50,147 @@ function keepin_register_menu() {
     register_nav_menu( 'footer-menu', __('Footer Menu'));
 
 }
+/***** FUNCIONES CUSTOM PARA EL PERSONZALIDOR *******
+*****************************************************/
+function custom_keepinagency_register( $wp_customize ) {
+
+    /** Panel de opciones para el personalizador **/
+    $wp_customize->add_panel( 'keepinagency', array(
+        'title' => 'Opciones KeepIn',
+        'description' => 'Opciones personales',
+        'priority' => 1,
+    ));
+    /******* SECCIÓN PARA SOCIALMEDIA FOOTER **********/
+    $wp_customize->add_section( 'SocialMediaFoot', array(
+        'title' => __( 'Sección Social Media', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' => 1,
+    ));
+    
+    /** Setting Insta Icono **/
+    $wp_customize->add_setting( 'instalogo', array (
+        'default'        => get_template_directory_uri() . '/img/ico-instagram.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'insta', array(
+        'label'      => __( 'Icono Instagram', 'textdomain' ),
+        'section'    => 'SocialMediaFoot',
+        'settings'   => 'instalogo',
+        'priority'   => 1,
+    )));
+    /** Setting InstaURL **/
+    $wp_customize->add_setting( 'instaurl', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('instaurl', array(
+        'label' => __( 'Perfil Instagram', 'textdomain' ),
+        'section' => 'SocialMediaFoot',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    /** el Setting FaceIcono **/
+    $wp_customize->add_setting( 'facelogo', array (
+        'default'        => get_template_directory_uri() . '/img/ico-facebook.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'face', array(
+        'label'      => __( 'Icono Facebook', 'textdomain' ),
+        'section'    => 'SocialMediaFoot',
+        'settings'   => 'facelogo',
+        'priority'   => 3,
+    )));
+    /**Agrego el Setting FaceURL**/
+    $wp_customize->add_setting( 'faceurl', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('faceurl', array(
+        'label' => __( 'Perfil Facebook', 'textdomain' ),
+        'section' => 'SocialMediaFoot',
+        'priority' => 4,
+        'type' => 'text',
+    ));
+    /** Setting Link Icono **/
+    $wp_customize->add_setting( 'linkelogo', array (
+        'default'        => get_template_directory_uri() . '/img/ico-linkedin.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'linke', array(
+        'label'      => __( 'Icono Linkedin', 'textdomain' ),
+        'section'    => 'SocialMediaFoot',
+        'settings'   => 'linkelogo',
+        'priority'   => 5,
+    )));
+    /** Setting Link url **/
+    $wp_customize->add_setting( 'linkeurl', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('linkeurl', array(
+        'label' => __( 'Perfil Linkedin', 'textdomain' ),
+        'section' => 'SocialMediaFoot',
+        'priority' => 6,
+        'type' => 'text',
+    ));
+    /** Setting GitHub Icono **/
+    $wp_customize->add_setting( 'gitlogo', array (
+        'default'        => get_template_directory_uri() . '/img/ico-github.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'git', array(
+        'label'      => __( 'Icono Github', 'textdomain' ),
+        'section'    => 'SocialMediaFoot',
+        'settings'   => 'gitlogo',
+        'priority'   => 7,
+    )));
+    /** Setting Git url **/
+    $wp_customize->add_setting( 'giturl', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('giturl', array(
+        'label' => __( 'Perfil Github', 'textdomain' ),
+        'section' => 'SocialMediaFoot',
+        'priority' => 8,
+        'type' => 'text',
+    ));
+
+}
+
+/************** METABOXES PARA EL TITULO ****************
+********************************************************/
+function meta_box_titulo() {
+    add_meta_box('titulo','Indique el titulo a ser usado para esta página.','el_titulo','post','normal','high');
+}
+
+function el_titulo() {
+    global $wpdb, $post;
+    $value  = get_post_meta($post->ID, 'titulo', true);
+
+    echo '<label><strong>Titulo:</strong></label>
+    <input type="text" name="titulo" id="titulo" value="'.htmlspecialchars($value).'" style="width: 300px;" /></br>';
+}
+
+function guardar_titulo() {
+    global $wpdb, $post;
+    if (!$post_id) $post_id = $_POST['post_ID'];
+    if (!$post_id) return $post;
+    $price= $_POST['titulo'];
+    update_post_meta($post_id, 'titulo', $price);
+}
 
 /*** Añadir acciones en base a las funciones definidas ***/ 
 add_action( 'wp_enqueue_scripts', 'keepin_enqueue_styles' );    // Css
 add_action( 'wp_enqueue_scripts', 'keepin_enqueue_scripts' );   // Scripts Javas
 add_action( 'after_setup_theme', 'keepin_wp_setup' );           // Colocar título, logo de la página e imagen destacada desde wordpress
 add_action( 'after_setup_theme', 'keepin_register_menu' );      // Menús
+add_action( 'customize_register', 'custom_keepinagency_register' );  // Personalizador
+add_action( 'add_meta_boxes', 'meta_box_titulo' );                //Metaboxes
+add_action( 'save_post', 'guardar_titulo' );                     //guardar titulo metabox
+add_action( 'publish_post', 'guardar_titulo' );                  //Publicar título metabox en post
 ?>

@@ -15,6 +15,8 @@ $nuevo_arreglo = new WP_Query(array(
                 $nuevo_arreglo->the_post();?>
                     <div class="">
                         <a class="titulo_services" href="<?php the_permalink(); ?>"><?php the_title(); ?>
+                            <br>
+                            <?php echo get_post_meta($post->ID, 'titulo', true); ?>
                             <div class="miniatura_servicios"><?php the_post_thumbnail('medium');?></div>
                         </a>
                             <div class="post_services"><?php the_excerpt();?></div>

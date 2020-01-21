@@ -21,7 +21,7 @@ WordPress Available:  yes
 }
 
 @font-face {
-  font-family: 'Conv_RobotoCriketCondensed';
+  font-family: 'Conv_RobotoCondensed';
   src: url('fonts/Roboto/Roboto-Condensed.ttf') format('truetype');
 }
 
@@ -68,13 +68,9 @@ h6, .h6 {
         height: 40px !important;
        
     }
-    .burger{
-      text-align: left;
-    }
     .header-menu li{
-        
-        font-size: 1.2em !important;
-        border-bottom: solid 1px;
+        font-size: 1.4em !important;
+        text-align: center !important;
     }
     .header-menu a{
       color: black ;
@@ -93,8 +89,15 @@ h6, .h6 {
     }
     .btn-home-team{
       background-color: #2f5961;
-      width: 100% !important;
-      height: 100%;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.8em;
+    }
+    .home-team{
+      background-color:#65c1d1 !important;
+    }
+    .team{
+      font-size: 1.6em; 
+      font-family: "Conv_RobotoCondensed";
     }
     .portfolio{
       background-color: #413a4d;
@@ -107,16 +110,40 @@ h6, .h6 {
     }
     .titulo_services{
       color: #75b976;
+      font-size: 1.8em;
+      font-family: "Conv_RobotoBoldCondensed";
     }
     .post_services{
       color: #413a4d;
+      font-size: 1em;
+      font-family: "Conv_RobotoBoldCondensed";
     }
-    .home-team{
-      background-color:#65c1d1 !important;
+    .footer{
+      background-color: #e0e0e0;
     }
-    .team{
-      font-size: 1em; 
+    .footer-menu{
+      background-color: #413a4d !important;
     }
+    .footer-menu a{
+      color: #ffffff;
+      font-size: 1.3em;
+      font-family: "Conv_RobotoCondensed";
+    }
+    .dirurl-footer{
+      color: #413a4d;
+      font-size: 1.3em;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .texto-footer{
+      color: #413a4d;
+      font-size: 1.6em;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .texto-btn{
+      font-size: 1.3em;
+      font-family: "Conv_RobotoLightItalic";
+    }
+
 
 }
 /**************************************************************
