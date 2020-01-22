@@ -19,7 +19,7 @@ $nuevo_arreglo = new WP_Query(array(
                             <?php echo get_post_meta($post->ID, 'titulo', true); ?>
                             <div class="miniatura_servicios"><?php the_post_thumbnail('medium');?></div>
                         </a>
-                            <div class="post_services"><?php the_excerpt();?></div>
+                            <div class="post_services pt-2"><?php the_excerpt();?></div>
                     </div>
             <?php endwhile;?>
 		</div>

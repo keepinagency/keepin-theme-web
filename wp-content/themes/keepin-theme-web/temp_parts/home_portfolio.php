@@ -27,7 +27,7 @@ $nuevo_arreglo = new WP_Query(array(
                 </div>
 
                 <div class="d-flex align-items-center justify-content-center
-                            col-12 p-0 m-0 regular shadow" >
+                            col-12 pt-1 pb-3 m-0 regular shadow" >
                     <?php the_post_thumbnail('medium'); ?>
                 </div>
         <?php endwhile; wp_reset_postdata();?>   

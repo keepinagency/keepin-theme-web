@@ -82,15 +82,20 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 3,
     ));
     
-    /******* SECCIÓN PARA BTN HOME 02**********/
+    /******* SECCIÓN PARA BTN HOME 03**********/
     $wp_customize->add_section( 'blue', array(
         'title' => __( 'Boton Home 03 - Blue', 'textdomain' ),
         'panel' => 'keepinagency',
         'priority' => 3,
     ));
+    /******* SECCIÓN PARA TEXTO HOME **********/
+    $wp_customize->add_section( 'citahome', array(
+        'title' => __( 'Texto o Cita para el Home', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' => 4,
+    ));
     
     /******* SETTING & CONTROL PARA SECCIONES**********/
-
      /** Setting CTA-TXT *********
       **    HOME 01      ********/
      $wp_customize->add_setting( 'txt-cta-green', array(
@@ -200,8 +205,20 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 3,
         'type' => 'text',
     ));
+    /** Setting TEXTO *********
+    ***    HOME       ********/
+    $wp_customize->add_setting( 'home-texto', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control( 'home-texto', array(
+        'label' => __( 'Ingrese el texto para el Home', 'textdomain' ),
+        'section' => 'citahome',
+        'priority' => 1,
+        'type' => 'textarea',
+    ));
 
-    /** Setting Insta Icono **/
+    /** Setting Insta Icono FOOTER **/
     $wp_customize->add_setting( 'instalogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-instagram.png',
         'capability'     => 'edit_theme_options',
@@ -213,7 +230,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'settings'   => 'instalogo',
         'priority'   => 1,
     )));
-    /** Setting InstaURL **/
+    /** Setting InstaURL FOOTER **/
     $wp_customize->add_setting( 'instaurl', array(
         'type' => 'option',
         'capability' => 'edit_theme_options',
@@ -224,7 +241,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 2,
         'type' => 'text',
     ));
-    /** el Setting FaceIcono **/
+    /** el Setting FaceIcono FOOTER **/
     $wp_customize->add_setting( 'facelogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-facebook.png',
         'capability'     => 'edit_theme_options',
@@ -236,7 +253,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'settings'   => 'facelogo',
         'priority'   => 3,
     )));
-    /**Agrego el Setting FaceURL**/
+    /**Agrego el Setting FaceURL FOOTER **/
     $wp_customize->add_setting( 'faceurl', array(
         'type' => 'option',
         'capability' => 'edit_theme_options',
@@ -247,7 +264,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 4,
         'type' => 'text',
     ));
-    /** Setting Link Icono **/
+    /** Setting Link Icono FOOTER **/
     $wp_customize->add_setting( 'linkelogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-linkedin.png',
         'capability'     => 'edit_theme_options',
@@ -259,7 +276,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'settings'   => 'linkelogo',
         'priority'   => 5,
     )));
-    /** Setting Link url **/
+    /** Setting Link url FOOTER **/
     $wp_customize->add_setting( 'linkeurl', array(
         'type' => 'option',
         'capability' => 'edit_theme_options',
@@ -270,7 +287,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 6,
         'type' => 'text',
     ));
-    /** Setting GitHub Icono **/
+    /** Setting GitHub Icono FOOTER **/
     $wp_customize->add_setting( 'gitlogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-github.png',
         'capability'     => 'edit_theme_options',
@@ -282,7 +299,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'settings'   => 'gitlogo',
         'priority'   => 7,
     )));
-    /** Setting Git url **/
+    /** Setting Git url FOOTER **/
     $wp_customize->add_setting( 'giturl', array(
         'type' => 'option',
         'capability' => 'edit_theme_options',
