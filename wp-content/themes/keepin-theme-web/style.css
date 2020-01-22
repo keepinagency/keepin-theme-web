@@ -108,7 +108,7 @@ h6, .h6 {
 
 
   .btn-home-start{
-    background-color: #75b976;
+    background-color: #66cc66;
     border: none;
     width: 170px;
     height: 55px;
@@ -123,8 +123,8 @@ h6, .h6 {
 *****************************/
 @media only screen and (min-device-width : 320px) and (max-device-width : 680px){
   .middle_aboutus_home{
-    border-top: solid thin #75b976;
-    border-bottom: solid thin #75b976;
+    border-top: solid thin #66cc66;
+    border-bottom: solid thin #66cc66;
   }
   .text_aboutus_home{
     font-family: "Conv_RobotoRegular";
@@ -148,7 +148,7 @@ h6, .h6 {
       background-color:#65c1d1 !important;
     }
     .home-green{
-      background-color:#75b976 !important;
+      background-color:#66cc66 !important;
     }
     .green{
       font-size: 1.6em; 
@@ -196,7 +196,7 @@ h6, .h6 {
       font-family: "Conv_RobotoCondensed";
     }
     .titulo_services{
-      color: #75b976;
+      color: #66cc66;
       font-size: 1.8em;
       font-family: "Conv_RobotoBoldCondensed";
       line-height: 1.1em;
