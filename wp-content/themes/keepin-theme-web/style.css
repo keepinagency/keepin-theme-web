@@ -12,7 +12,8 @@ WordPress Available:  yes
 /** Definición de fuentes locales **/
 @font-face {
   font-family: 'Conv_RobotoBoldCondensed';
-  src: url('fonts/Roboto/Roboto-BoldCondensed.ttf') format('truetype');
+  src: url('./fonts/Roboto/Roboto-BoldCondensed.ttf') format('truetype');
+  fon
 }
 
 @font-face {
@@ -29,11 +30,13 @@ WordPress Available:  yes
   font-family: 'Conv_RobotoLightItalic';
   src: url('fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
 }
-
+html{
+  font-size: 12pt;
+}
 body {
   /*font-family: 'Roboto Condensed', sans-serif;
-  font-family: 'Roboto', sans-serif;*/
-  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;*/
 }
 
 h1, .h1,
@@ -51,6 +54,10 @@ h6, .h6 {
 /** Override Bootstrap's default container. **/
 
 @media (min-width: 1200px) {
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
   .container {
     padding: 0px;
     margin: 0px;
@@ -62,38 +69,59 @@ h6, .h6 {
     margin: 0px;
   }
 }
+
+/*****************************
+****************************** HEADER 
+*****************************/
+@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+
+  .imglogo{
+    height: 40px !important;
+  }
+
+  .header-menu li{
+    font-size: 1.4rem !important;
+    text-align: center !important;
+  }
+
+  .area-menu{
+    border-bottom: none;
+  }
+
+  .header-menu a{
+    color: black ;
+  }
+  
+  
+}
+
+/*****************************
+****************************** HEADER START
+*****************************/
+@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+  .txt-home-start{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #413a4d;
+  }
+
+
+  .btn-home-start{
+    background-color: #75b976;
+    border: none;
+    width: 170px;
+    height: 55px;
+    font-size: 1.4rem;
+    color: white;
+    font-family: "Conv_RobotoBoldCondensed";
+  }
+}
+
 /***************** Comportamiento responsive *********************/
 @media only screen and (min-device-width : 320px) and (max-device-width : 680px){
-    .imglogo{
-        height: 40px !important;
-       
-    }
-    .header-menu li{
-        font-size: 1.4em !important;
-        text-align: center !important;
-    }
-    .header-menu a{
-      color: black ;
-    }
-    .area-menu{
-      border-bottom: none;
-      
-    }
     .area-menufoot{
       display: none;
-    }
-    .txt-home-start{
-      font-family: "Conv_RobotoBoldCondensed";
-      font-size: 1.8em;
-    }
-    .btn-home-start{
-      background-color: #75b976;
-      width: 170px;
-      height: 55px;
-    }
-    .btn-txt-home-start{
-      font-size: 1.4em;
-      font-family: "Conv_RobotoBoldCondensed";
     }
     .btn-home-team{
       background-color: #2f5961;
