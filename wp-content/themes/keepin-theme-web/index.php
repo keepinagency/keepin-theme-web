@@ -3,6 +3,7 @@
         require_once(Keepin_TEMP_PARTS . '/home_start.php');
         require_once(Keepin_TEMP_PARTS . '/home_portfolio.php');
         require_once(Keepin_TEMP_PARTS . '/home_cta_green.php');
+        require_once(Keepin_TEMP_PARTS . '/home_cta_grey.php');
         require_once(Keepin_TEMP_PARTS . '/home_services.php');
         require_once(Keepin_TEMP_PARTS . '/home_team.php');
         /*require_once(Keepin_TEMP_PARTS . '/home_blog.php');

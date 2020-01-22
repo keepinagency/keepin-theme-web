@@ -116,6 +116,19 @@ h6, .h6 {
       font-family: "Conv_RobotoBoldCondensed";
       font-size: 1.4em;
     }
+    .home-grey{
+      background-color:#7f7f7f !important;
+    }
+    .grey{
+      font-size: 1.6em; 
+      font-family: "Conv_RobotoCondensed";
+    }
+    .btn-home-grey{
+      color:#413a4d;
+      background-color: #e0e0e0;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.4em;
+    }
     .team{
       font-size: 1.6em; 
       font-family: "Conv_RobotoCondensed";
