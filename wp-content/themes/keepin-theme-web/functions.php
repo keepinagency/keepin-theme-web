@@ -63,11 +63,30 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 1,
     ));
 
+    /******* SECCIÓN PARA PÁGINAS A MOSTRAR EN HOME **********/
+    $wp_customize->add_section( 'pageshome' , array(
+        'title'      => __( 'Página para contenido HOME', 'textdomain' ),
+        'panel'      => 'keepinagency',
+        'priority'   => 1,
+    ) );
+
+    // Setting y control para página superior HOME
+    $wp_customize->add_setting( 'page-home-superior', array(
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+    ) );
+    $wp_customize->add_control( 'page-home-superior' , array(
+        'label'    => __( 'Seleccione página nivel superior', 'textdomain' ),
+        'section'  => 'pageshome',
+        'type'     => 'dropdown-pages'
+    ) );
+
+
     /******* SECCIÓN PARA SOCIALMEDIA FOOTER **********/
     $wp_customize->add_section( 'SocialMediaFoot', array(
         'title' => __( 'Social Media Footer', 'textdomain' ),
         'panel' => 'keepinagency',
-        'priority' => 1,
+        'priority' => 6,
     ));
     /** Setting Insta Icono FOOTER **/
     $wp_customize->add_setting( 'instalogo', array (
