@@ -13,12 +13,11 @@ WordPress Available:  yes
 @font-face {
   font-family: 'Conv_RobotoBoldCondensed';
   src: url('./fonts/Roboto/Roboto-BoldCondensed.ttf') format('truetype');
-  fon
 }
 
 @font-face {
   font-family: 'Conv_RobotoRegular';
-  src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {

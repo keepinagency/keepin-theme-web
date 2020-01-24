@@ -471,14 +471,11 @@ add_action( 'wp_enqueue_scripts', 'keepin_enqueue_scripts' );   // Scripts Javas
 add_action( 'after_setup_theme', 'keepin_wp_setup' );           // Colocar título, logo de la página e imagen destacada desde wordpress
 add_action( 'after_setup_theme', 'keepin_register_menu' );      // Menús
 add_action( 'customize_register', 'custom_keepinagency_register' );  // Personalizador
-
-add_action( 'add_meta_boxes', 'subtitulo' );                       //Metaboxes para PAGE
-add_action( 'save_post', 'guardar_subtitulo' );                    //guardar subtitulo metabox
-add_action( 'publish_post', 'guardar_subtitulo' );                 //Publicar subtitulo metabox en page
-
-add_action('save_post', 'guardar_sub_titulo');
-add_action('publish_post', 'guardar_sub_titulo');
-
+add_action( 'add_meta_boxes', 'subtitulo' );                    //Metaboxes para PAGE
+add_action( 'save_post', 'guardar_subtitulo' );                 //guardar subtitulo metabox en PAGE
+add_action( 'publish_post', 'guardar_subtitulo' );              //Publicar subtitulo metabox en PAGE
+add_action('save_post', 'guardar_sub_titulo');                  //guardar sub_titulo metabox en PAGE
+add_action('publish_post', 'guardar_sub_titulo');               //Publicar sub_titulo metabox en PAGE
 add_action('save_post', 'guardar_descripcion');
 add_action('publish_post', 'guardar_descripcion');
 

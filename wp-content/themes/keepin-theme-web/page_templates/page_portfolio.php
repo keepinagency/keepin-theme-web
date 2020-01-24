@@ -1,8 +1,8 @@
 <?php 
 /*
-Template Name:blog
+Template Name:porttolio
 Template Post Type: page
-Esta es la plantilla para el Bog del menu
+Esta es la plantilla para el Portafolio del menu
  */
 get_header();
     
@@ -10,7 +10,8 @@ $paginacion_nueva = get_query_var('paged');
 
 $nuevo_arreglo = new WP_Query(array(
 	'post_type'=>'post', 
-    'category_name' => 'blog',
+    'category_name' => 'portfolio',
+    'order'  =>'ASC',
 	'posts_per_page'=>4,
 	'paged'=>$paginacion_nueva 
 ));
@@ -30,13 +31,13 @@ $nuevo_arreglo = new WP_Query(array(
             <?php the_excerpt();?>
         </div>
         <?php while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
-                <div class=" d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0">
+                <div class="portfolio d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0">
                     <div class="col-10">
-                        <a class="text-white p-0 m-0" href="<?php the_permalink(); ?>">
+                        <a class="titulo_portfolio text-white p-0 m-0" href="<?php the_permalink(); ?>">
                             <div class="p-0 m-0">
                                 <?php the_title();?>
                             </div>
-                            <div class="p-0 m-0">
+                            <div class="post_portfolio p-0 m-0">
                                 <?php the_content();?>
                             </div>
                         </a>
