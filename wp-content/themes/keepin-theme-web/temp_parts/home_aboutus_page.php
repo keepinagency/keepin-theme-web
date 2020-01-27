@@ -1,6 +1,6 @@
 <?php
     // Obtenemos la página seleccionada en el personalizador
-    $mod = get_theme_mod( 'page-home-superior' . $count );
+    $mod = get_theme_mod( 'page-home-superior' );
 	if ( 'page-none-selected' != $mod ) {
 		$pagesel[] = $mod;
     }

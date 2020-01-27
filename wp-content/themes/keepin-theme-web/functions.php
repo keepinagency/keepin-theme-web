@@ -87,12 +87,53 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 6,
     ));
 
-    /******* SECCIÓN PARA BTN HOME 01**********/
+    /******* 
+     * 
+     * SECCIÓN PARA BTN HOME 01 GREEN
+     * 
+     ***/
     $wp_customize->add_section( 'green', array(
-        'title' => __( 'Boton Home 01 - Green', 'textdomain' ),
+        'title' => __( 'Primer CTA Home - Green (01)', 'textdomain' ),
         'panel' => 'keepinagency',
         'priority' => 2,
     ));
+    //Setting y control TXT para CTA green
+      $wp_customize->add_setting( 'txt-cta-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-cta-green', array(
+        'label' => __( 'Texto CTA Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 1,
+        'type' => 'textarea',
+    ));
+    //Setting y control BTN para CTA green
+    $wp_customize->add_setting( 'txt-btn-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-btn-green', array(
+        'label' => __( 'Texto boton Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    // Setting y control para página destino CTA green
+    $wp_customize->add_setting( 'page-btn-green', array(
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+    ) );
+    $wp_customize->add_control( 'page-btn-green' , array(
+        'label'    => __( 'Seleccione página landing destino', 'textdomain' ),
+        'section'  => 'green',
+        'type'     => 'dropdown-pages'
+    ) );
+
+    
+
+
+
 
     /******* SECCIÓN PARA BTN HOME 02**********/
     $wp_customize->add_section( 'grey', array(
@@ -115,42 +156,8 @@ function custom_keepinagency_register( $wp_customize ) {
     ));
     
     /******* SETTING & CONTROL PARA SECCIONES**********/
-     /** Setting CTA-TXT *********
-      **    HOME 01      ********/
-     $wp_customize->add_setting( 'txt-cta-green', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('txt-cta-green', array(
-        'label' => __( 'Texto CTA Home 01 - Green', 'textdomain' ),
-        'section' => 'green',
-        'priority' => 1,
-        'type' => 'textarea',
-    ));
-    /** Setting BTN-URL *********
-     **     HOME 01     ********/
-    $wp_customize->add_setting( 'url-btn-green', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('url-btn-green', array(
-        'label' => __( 'URL CTA Home 01 - Green', 'textdomain' ),
-        'section' => 'green',
-        'priority' => 2,
-        'type' => 'text',
-    ));
-    /** Setting BTN-TXT *********
-     **      HOME 01    ********/
-    $wp_customize->add_setting( 'txt-btn-green', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('txt-btn-green', array(
-        'label' => __( 'Texto boton Home 01 - Green', 'textdomain' ),
-        'section' => 'green',
-        'priority' => 3,
-        'type' => 'text',
-    ));
+     
+    
     /** Setting CTA-TXT *********
      **      HOME 02    ********/
     $wp_customize->add_setting( 'txt-cta-grey', array(

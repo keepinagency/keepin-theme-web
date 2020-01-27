@@ -33,8 +33,7 @@ $nuevo_arreglo = new WP_Query(array(
                 </div>
 
                 <div class="d-flex align-items-center justify-content-center
-                            col-12 pt-2 pb-4 m-0 "
-                     >
+                            col-12 pt-2 pb-4 m-0 ">
                     <?php 
                     the_post_thumbnail('medium', ['class' => 'img-portafolio', 'title' => 'Portafolio imagen']);
                      ?>
