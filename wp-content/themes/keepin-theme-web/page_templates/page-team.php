@@ -12,7 +12,7 @@ get_header();
         'posts_per_page'=>6
     ));
 ?>
-<div class="container-fluid col-12 d-lg-none">
+<div class="container-fluid col-12 d-lg-none p-0 m-0">
     <div class="row col-xs-12 col-lg-none p-0 m-0">
         <?php if ($nuevo_arreglo->have_posts()) :?>
             <div class="col-12 p-2 text-center">
@@ -28,6 +28,7 @@ get_header();
                 <?php the_excerpt();?>
             </div>
     <div>
+    <div class="col-12 mt-2" style="background-color:#413a4d; height:10px;">&nbsp;</div>
     <div class="row">
         <?php
         while ($nuevo_arreglo->have_posts()) :
