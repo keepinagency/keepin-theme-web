@@ -17,7 +17,7 @@ WordPress Available:  yes
 
 @font-face {
   font-family: 'Conv_RobotoRegular';
-  src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
