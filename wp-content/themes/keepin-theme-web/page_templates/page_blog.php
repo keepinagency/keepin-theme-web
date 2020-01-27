@@ -32,7 +32,7 @@ $nuevo_arreglo = new WP_Query(array(
         <div class="col-12 mt-2" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 
         <?php while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
-                <div class=" d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0">
+                <div class=" d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0 bg-success">
                     <div class="col-10">
                         <a class="text-white p-0 m-0" href="<?php the_permalink(); ?>">
                             <div class="p-0 m-0">

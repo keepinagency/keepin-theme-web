@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name:porttolio
+Template Name:portfolio
 Template Post Type: page
 Esta es la plantilla para el Portafolio del menu
  */
