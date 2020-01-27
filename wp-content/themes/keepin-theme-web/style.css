@@ -12,7 +12,7 @@ WordPress Available:  yes
 /** Definición de fuentes locales **/
 @font-face {
   font-family: 'Conv_RobotoBoldCondensed';
-  src: url('./fonts/Roboto/Roboto-BoldCondensed.ttf') format('truetype');
+  src: url('fonts/Roboto/Roboto-BoldCondensed.ttf') format('truetype');
 }
 
 @font-face {

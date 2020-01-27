@@ -88,6 +88,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'panel' => 'keepinagency',
         'priority' => 6,
     ));
+
     /** Setting Insta Icono FOOTER **/
     $wp_customize->add_setting( 'instalogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-instagram.png',
@@ -111,12 +112,52 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 2,
         'type' => 'text',
     ));
+    //Setting y control TXT para CTA green
+      $wp_customize->add_setting( 'txt-cta-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-cta-green', array(
+        'label' => __( 'Texto CTA Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 1,
+        'type' => 'textarea',
+    ));
+    //Setting y control BTN para CTA green
+    $wp_customize->add_setting( 'txt-btn-green', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('txt-btn-green', array(
+        'label' => __( 'Texto boton Home 01 - Green', 'textdomain' ),
+        'section' => 'green',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    // Setting y control para página destino CTA green
+    $wp_customize->add_setting( 'page-btn-green', array(
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+    ) );
+    $wp_customize->add_control( 'page-btn-green' , array(
+        'label'    => __( 'Seleccione página landing destino', 'textdomain' ),
+        'section'  => 'green',
+        'type'     => 'dropdown-pages'
+    ) );
+
+    
+
+
+
+
+   
     /** el Setting FaceIcono FOOTER **/
     $wp_customize->add_setting( 'facelogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-facebook.png',
         'capability'     => 'edit_theme_options',
         'type'           => 'option',
     ));
+
     $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'face', array(
         'label'      => __( 'Icono Facebook', 'textdomain' ),
         'section'    => 'SocialMediaFoot',
@@ -222,6 +263,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 3,
         'type' => 'text',
     ));
+
    /************** SECCIÓN PARA BTN HOME 02 *********************/
    $wp_customize->add_section( 'grey', array(
     'title' => __( 'Boton Home 02 - Gray', 'textdomain' ),
