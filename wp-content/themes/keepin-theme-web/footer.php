@@ -4,27 +4,30 @@
 	$url_lik = get_option( 'linkeurl', 'http://www.linkedin.com' );
 	$url_git = get_option( 'giturl', 'http://www.github.com' );
 	
-	$icono_int = get_option( 'instalogo', '' );
+	/*$icono_int = get_option( 'instalogo', '' );
 	$icono_fbk = get_option( 'facelogo', '' );
 	$icono_lik = get_option( 'linkelogo', '' );
-	$icono_git = get_option( 'gitlogo', '' );
+	$icono_git = get_option( 'gitlogo', '' );*/
 ?>
 </div--><!-- /.row -->
 </div><!-- /.container -->
 <footer class="footer">
 	<!--TEXTO Y BOTON-->
-<div class="col-12 pt-3 texto-footer">
+<div class="col-12 pl-3 pt-4 texto-footer">
 	Need more info?
 </div>
 <div class="col-12 col-xs-12 d-lg-none d-md-flex">
 	<form class="form-inline">
-		<div class="form-group">
-			<input type="text" class="form-control-plaintext bg-white texto-btn" 
+		<div class="form-group col-10 p-0 m-0">
+			<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 
 								id="staticEmail2" placeholder="here@yourmail.com">
 		</div>
-		<button type="submit" class="btn btn-success mt-0">
-			<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans.png'; ?>">
-		</button>
+		<div class="form-group col-2 p-0 m-0 ">
+			<button type="submit" class="btn p-0 m-0">
+				<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " 
+				class="img-btn-foot">
+			</button>
+		</div>
 	</form>
 </div>
 
@@ -33,22 +36,22 @@
 	
 	<div class="col-3">
 		<a href="<?php echo $url_int; ?>" target="_blank">
-			<img src="<?php echo /*$icono_int*/ get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
+			<img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
 		</a>
 	</div>
 	<div class="col-3">
 		<a href="<?php echo $url_fbk; ?>" target="_blank">
-			<img src="<?php echo /*$icono_fbk*/ get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
+			<img src="<?php echo get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
 		</a>
 	</div>
 	<div class="col-3">
 		<a href="<?php echo $url_lik;?> " target="_blank">
-			<img src="<?php echo /*$icono_lik*/ get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
+			<img src="<?php echo get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
 		</a>
 	</div>
 	<div class="col-3">
 		<a href="<?php echo $url_git;?>" target="_blank">
-			<img src="<?php echo /*$icono_git*/ get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
+			<img src="<?php echo get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
 		</a>
 	</div>
 </div>

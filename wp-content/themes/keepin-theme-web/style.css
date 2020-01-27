@@ -194,9 +194,9 @@ h6, .h6 {
       font-size: 1.4em;
     }
     .team{
-      font-size: 1.5em; 
+      font-size: 1.6rem; 
       font-family: "Conv_RobotoCondensed";
-      line-height: 1.1em;
+      line-height: 1.7rem;
     }
     
     .titulo_services{
@@ -235,6 +235,10 @@ h6, .h6 {
       font-size: 1.3em;
       font-family: "Conv_RobotoLightItalic";
     }
+    .img-btn-foot {
+      background-color: #66cc66 !important;
+    }
+      
 
 
 }
