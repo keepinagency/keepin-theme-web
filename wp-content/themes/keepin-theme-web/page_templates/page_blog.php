@@ -20,25 +20,28 @@ $nuevo_arreglo = new WP_Query(array(
         <div class="col-12 p-2 text-center">
             <img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>">
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center titleblog_page">
             <?php the_title(); ?>
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center subblog_page">
             <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
         </div>
-        <div class="col-12 text-center pt-3 pr-2 pl-2">
+        <div class="col-12 text-center sub_blog_page">
+            <?php echo get_post_meta($post->ID, 'sub_titulo', true); ?>
+        </div>
+        <div class="col-12 text-center pt-3 pr-5 pl-5 textblog_page">
             <?php the_excerpt();?>
         </div>
         <div class="col-12 mt-2" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 
         <?php while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
-                <div class=" d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0 bg-success">
+                <div class="d-flex d-flex-row col-12 p-0 pt-2 pb-2 contblog_post">
                     <div class="col-10">
                         <a class="text-white p-0 m-0" href="<?php the_permalink(); ?>">
-                            <div class="p-0 m-0">
+                            <div class="p-0 m-0 titleblog_post">
                                 <?php the_title();?>
                             </div>
-                            <div class="p-0 m-0">
+                            <div class="p-0 m-0 postblog_post">
                                 <?php the_content();?>
                             </div>
                         </a>

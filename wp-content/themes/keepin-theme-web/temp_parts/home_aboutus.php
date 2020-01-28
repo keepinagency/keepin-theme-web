@@ -6,7 +6,7 @@
 $nuevo_arreglo = new WP_Query(array(
 	'post_type'=>'post', 
     'category_name' => 'about_us_home',
-    'order'=>'ASC',
+    'order'=>'DESC',
 	'posts_per_page'=>3
 ));
 ?>

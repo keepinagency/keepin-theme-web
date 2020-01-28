@@ -111,13 +111,14 @@ h6, .h6 {
 }
 
 /*****************************
-****************************** PORTFOLIO
+****************************** PORTFOLIO HOME
 *****************************/
 @media only screen and (min-device-width : 320px) and (max-device-width : 680px){
   .portfolio{
     background-color: #413a4d;
     min-height: 150px;
   }
+  
   .titulo_portfolio{
     font-size: 2.15rem;
     font-family: "Conv_RobotoBoldCondensed";
@@ -129,6 +130,64 @@ h6, .h6 {
   }
   .img-portafolio{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/*****************************
+****************************** PORTFOLIO PAGE
+*****************************/
+  .portf{
+    background-color: #66cc66;
+    min-height: 150px;
+  }
+  .title_portfpage{
+    font-family: "Conv_RobotoRegular";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .subportfpage{
+    font-family: "Conv_RobotoRegular";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .text-portfpage{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.2rem;
+    color: #413a4d;
+  }
+/*****************************
+****************************** BLOG PAGE
+*****************************/
+  .contblog_post{
+    background-color: #66cc66;
+    min-height: 150px;
+  }
+  .titleblog_page{
+    font-family: "Conv_RobotoRegular";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .subblog_page{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .sub_blog_page{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .textblog_page{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.2rem;
+    color: #413a4d;
+  }
+  .titleblog_post{
+    font-size: 2.15rem;
+    font-family: "Conv_RobotoBoldCondensed";
+  }
+  .postblog_post{
+    font-size: 1.5rem;
+    font-family: "Conv_RobotoRegular";
+    line-height: 1.5rem;
   }
 }
 
@@ -142,8 +201,75 @@ h6, .h6 {
   }
   .text_aboutus_home{
     font-family: "Conv_RobotoRegular";
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #413a4d;
+  }
+}
+/*****************************
+****************************** PAGE OUR SERVICES
+*****************************/
+@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+  .subourpage{
+    font-family: "Conv_RobotoRegular";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .sub_ourpage{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .text-ourpage{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.2rem;
+    color: #413a4d;
+  }
+  .title-ourpage{
+    color: #66cc66;
+    font-size: 1.8em;
+    font-family: "Conv_RobotoBoldCondensed";
+    line-height: 1.1em;
+  }
+  .post_ourpage{
+    color: #413a4d;
+    font-size: 1.2rem;
+    font-family: "Conv_RobotoBoldCondensed";
+    line-height: 1.1em;
+  }
+  .btn-ourpage{
+    background-color: #66cc66;
+    font-size: 1.8em;
+    font-family: "Conv_RobotoBoldCondensed";
+  }
+/*****************************
+****************************** TEAM PAGE
+*****************************/
+  .titleteam_page{
+    font-family: "Conv_RobotoRegular";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .subteam_page{
+    font-family: "Conv_RobotoRegular";
+    font-size: 1.5rem;
+    color: #413a4d;
+  }
+  .textteam_page{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.2rem;
+    color: #413a4d;
+  }
+  .titleteam_post{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.3rem;
+  }
+  .subteam_post{
+    font-family: "Conv_RobotoCondensed";
+    font-size: 0.8rem;
+  }
+  .contteam_post{
+    background-color: #66cc66;
+    min-height: 60px;
   }
 }
 

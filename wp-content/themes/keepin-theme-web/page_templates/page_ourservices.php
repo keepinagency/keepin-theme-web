@@ -19,30 +19,32 @@ $nuevo_arreglo = new WP_Query(array(
             <div class="col-12 p-2 text-center">
                 <img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>">
             </div>
-            <div class="col-12 text-center">
+            <div class="subourpage col-12 text-center">
                 <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
             </div>
-            <div class="col-12 text-center">
+            <div class="sub_ourpage col-12 text-center">
                 <?php echo get_post_meta($post->ID, 'sub_titulo', true); ?>
             </div>
-            <div class="col-12 text-center pt-3 pr-2 pl-2">
+            <div class="text-ourpage col-12 text-center pt-3 pr-3 pl-3">
                 <?php the_excerpt();?>
             </div>
     <div>
-    <div class="col-12 mt-4" style="background-color:#413a4d; height:10px;">&nbsp;</div>
+    <div class="col-12 mt-3" style="background-color:#413a4d; height:10px;">&nbsp;</div>
     <div class="row col-12 p-0 m-0 d-flex align-items-center justify-content-center mx-auto">
                 <?php while ($nuevo_arreglo->have_posts()) :
                     $nuevo_arreglo->the_post();?>
-                        <div class="col-12">
-                            <a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?>
-                                <br>
+                        <div class="col-12 p-3">
+                            <a class="title-ourpage pl-3" href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a><br>
+                            <a class="title-ourpage pl-3" href="<?php the_permalink(); ?>">
                                 <?php echo get_post_meta($post->ID, 'titulo', true); ?>
                             </a>
-                                <div class="post_services pt-2"><?php the_excerpt();?></div>
+                            <div class="post_ourpage pr-3 pl-3 pt-2"><?php the_excerpt();?></div>
                         </div>
                         <a class="col-12" href="<?php the_permalink(); ?>">
                             <div class="col-12 mb-3 rounded"> 
-                                <button type="button" class="btn btn-success col-12 pl-5 pr-5 ">
+                                <button type="button" class="btn btn-ourpage col-12 pl-5 pr-5 text-white">
                                     Learn more
                                 </button> 
                             </div>

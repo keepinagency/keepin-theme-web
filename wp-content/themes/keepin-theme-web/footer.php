@@ -32,24 +32,24 @@
 </div>
 
 	<!--SOCIAL MEDIA-->
-<div class="col-12 m-0 pt-3 pb-5 row mx-auto">
+<div class="col-12 row mx-auto p-3">
 	
-	<div class="col-3">
+	<div class="col-2 m-2">
 		<a href="<?php echo $url_int; ?>" target="_blank">
 			<img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
 		</a>
 	</div>
-	<div class="col-3">
+	<div class="col-2 m-2">
 		<a href="<?php echo $url_fbk; ?>" target="_blank">
 			<img src="<?php echo get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
 		</a>
 	</div>
-	<div class="col-3">
+	<div class="col-2 m-2">
 		<a href="<?php echo $url_lik;?> " target="_blank">
 			<img src="<?php echo get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
 		</a>
 	</div>
-	<div class="col-3">
+	<div class="col-2 m-2">
 		<a href="<?php echo $url_git;?>" target="_blank">
 			<img src="<?php echo get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
 		</a>

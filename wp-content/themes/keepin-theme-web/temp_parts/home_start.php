@@ -10,7 +10,7 @@
         We build solutions<br>...on web.
     </div>
 
-    <button type="button" class="btn btn-home-start align-middle">Get Started!</button> 
+    <button type="button" class="btn btn-home-start align-middle col-6">Get Started!</button> 
 
     <div class="col-12 mt-4" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 </div>

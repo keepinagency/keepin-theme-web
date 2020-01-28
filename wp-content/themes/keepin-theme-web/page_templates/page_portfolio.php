@@ -21,18 +21,18 @@ $nuevo_arreglo = new WP_Query(array(
         <div class="col-12 p-2 text-center">
             <img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>">
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center title_portfpage">
             <?php the_title(); ?>
         </div>
-        <div class="col-12 text-center">
+        <div class="col-12 text-center subportfpage">
             <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
         </div>
-        <div class="col-12 text-center pt-3 pr-2 pl-2">
+        <div class="col-12 text-center pt-3 pr-3 pl-3 text-portfpage">
             <?php the_excerpt();?>
         </div>
         <div class="col-12 mt-2 mb-2" style="background-color:#413a4d; height:10px;">&nbsp;</div>
         <?php while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
-                <div class="portfolio d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0">
+                <div class="portf d-flex d-flex-row col-12 p-0 pt-3 pb-3 m-0">
                     <div class="col-10">
                         <a class="titulo_portfolio text-white p-0 m-0" href="<?php the_permalink(); ?>">
                             <div class="p-0 m-0">
