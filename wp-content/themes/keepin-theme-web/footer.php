@@ -16,7 +16,7 @@
 <div class="col-12 pl-3 pt-4 texto-footer">
 	Need more info?
 </div>
-<div class="col-12 col-xs-12 d-lg-none d-md-flex">
+<div id="#contacto" class="col-12 col-xs-12 d-lg-none d-md-flex">
 	<form class="form-inline">
 		<div class="form-group col-10 p-0 m-0">
 			<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 

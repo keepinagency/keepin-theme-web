@@ -506,7 +506,6 @@ function guardar_descripcion() {
     update_post_meta($post_id, 'descripcion', $price);
 }
 
-
 /*** Añadir acciones en base a las funciones definidas ***/ 
 add_action( 'wp_enqueue_scripts', 'keepin_enqueue_styles' );    // Css
 add_action( 'wp_enqueue_scripts', 'keepin_enqueue_scripts' );   // Scripts Javas
