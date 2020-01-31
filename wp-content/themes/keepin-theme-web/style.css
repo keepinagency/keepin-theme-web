@@ -49,7 +49,6 @@ h6, .h6 {
   font-weight: normal;
   /*color: #333;*/
 }
-
 /** Override Bootstrap's default container. **/
 
 @media (min-width: 1200px) {
@@ -73,26 +72,23 @@ h6, .h6 {
 /*****************************
 ****************************** HEADER 
 *****************************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
-  .imglogo{
-    height: 50px !important;
-  }
-  .header-menu li{
-    font-size: 1.4rem !important;
-    text-align: center !important;
-  }
-  .area-menu{
-    border-bottom: none;
-  }
-  .header-menu a{
-    color: black ;
-  }  
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .imglogo{
+      height: 50px !important;
+    }
+    .header-menu li{
+      font-size: 1.4rem !important;
+      text-align: center !important;
+    }
+    .header-menu a{
+      color: black;
+    }  
 }
 
 /*****************************
 ****************************** HEADER START
 *****************************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .txt-home-start{
     font-family: "Conv_RobotoBoldCondensed";
     font-size: 1.8rem;
@@ -109,11 +105,10 @@ h6, .h6 {
     font-family: "Conv_RobotoBoldCondensed";
   }
 }
-
 /*****************************
 ****************************** PORTFOLIO HOME
 *****************************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .portfolio{
     background-color: #413a4d;
     min-height: 150px;
@@ -194,21 +189,21 @@ h6, .h6 {
 /*****************************
 ****************************** HOME ABOUT US
 *****************************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .middle_aboutus_home{
     border-top: solid thin #66cc66;
     border-bottom: solid thin #66cc66;
   }
   .text_aboutus_home{
     font-family: "Conv_RobotoRegular";
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #413a4d;
   }
 }
 /*****************************
 ****************************** PAGE OUR SERVICES
 *****************************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .subourpage{
     font-family: "Conv_RobotoRegular";
     font-size: 1.5rem;
@@ -275,7 +270,7 @@ h6, .h6 {
 
 
 /***************** Comportamiento responsive *********************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 680px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
     .area-menufoot{
       display: none;
     }
@@ -312,6 +307,7 @@ h6, .h6 {
     .grey{
       font-size: 1.6em; 
       font-family: "Conv_RobotoCondensed";
+      line-height:2.2rem;
     }
     .btn-home-grey{
       color:#413a4d;
@@ -364,29 +360,143 @@ h6, .h6 {
     .img-btn-foot {
       background-color: #66cc66 !important;
     }
-      
+}
+/***********************************************************
+************************************************************
+************************************************************
+***********************************************************/
+@media (min-width:680px){
+  /*MENU*/
+  .header-menu a{
+      font-size: 1.6rem !important;
+      text-align: center !important;
+      color: #413a4d;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .area-menu{
+      text-align: right;
+    }
+    .leo{
+      text-align: center;
+    }
+    /*ABOUTUS_HOME*/
+    .middle_aboutus_home{
+      border-left: solid thin #66cc66;
+      border-right: solid thin #66cc66;
+    }
+    .text_aboutus_home{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.4rem;
+      color: #413a4d;
+      line-height: 1.6rem;
+    }
+    .txt-home-start{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: #66cc66;
+      float: right;
+    }
+    .btn-home-start{
+      background-color: #66cc66;
+      border: none;
+      width: 170px;
+      height: 55px;
+      font-size: 1.4rem;
+      color: white;
+      font-family: "Conv_RobotoBoldCondensed";
+      float: left;
+    }
+    /*****************PORTFOLIO******************/
+    .portfolio{
+      background-color: #413a4d;
+      min-height: 100px;
+    }
+    .titulo_portfolio{
+      font-size: 2.15rem;
+      font-family: "Conv_RobotoBoldCondensed";
+      color: #ffffff;
+    }
+    .post_portfolio{
+      font-size: 1.4rem;
+      font-family: "Conv_RobotoCondensed";
+      color: #ffffff;
+    }  
+    /*****************SERVICES******************/ 
+    .titulo_services{
+      color: #66cc66;
+      font-size: 1.8em;
+      font-family: "Conv_RobotoBoldCondensed";
+      line-height: 1.1em;
+    }
+    .titulo_services:hover{
+      color: #66cc66;
+      text-decoration-line: none;
+    }
+    .sub-tit{
+      color: #66cc66;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .post_services{
+      color: #413a4d;
+      font-size: 1.1em;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    /*****************HOME GREEN******************/
+    .home-green{
+      background-color:#66cc66 !important;
+      min-height:190px;
+    }
+    .green{
+      font-size: 1.6em; 
+      font-family: "Conv_RobotoCondensed";
+    }
+    .btn-home-green{
+      color:#413a4d;
+      background-color: #e0e0e0;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.8em;
+    }
+    /*****************HOME TEXTO******************/
+    .texto-home{
+      font-size: 1.5em;
+      font-family: "Conv_RobotoBoldCondensed";
+      line-height: 1.6rem;
+      color:#413a4d;
+    }
+    /*****************HOME GREY******************/
+    .home-grey{
+      background-color:#7f7f7f !important;
+    }
+    .grey{
+      font-size: 1.7rem; 
+      font-family: "Conv_RobotoCondensed";
+    }
+    .btn-home-grey{
+      color:#413a4d;
+      background-color: #e0e0e0;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.7rem;
+    }
+    .home_cta_grey_div:hover{
+      text-decoration-line: none;
+    }
+    /*****************HOME TEAM******************/
+    .btn-home-team{
+      background-color: #2f5961;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.8em;
+    }
+    .home-team{
+      background-color:#65c1d1 !important;
+    }
+    .team{
+      font-size: 1.6rem; 
+      font-family: "Conv_RobotoCondensed";
+      line-height: 1.9rem;
+    }
+    .img-team{
+      width: 40%;
+    }
 
-
 }
-/**************************************************************
-.header-menu li{
-  text-decoration: none;
-  font-size: 2em;
-  display: block !important;
-  padding: 10px;
-}
-.header-menu a{
-  color: black ;
-}
-.area-menu{
-  float: right;
-}
-.area-menufoot{
-  display: none;
-}
-.header{
-  border: thin solid#333;
-}
-.imglogo{
-  border: thin solid rgb(175, 55, 55);
-}**************/

@@ -11,12 +11,13 @@
     }*/
 ?>
 
-<div class="row home-green pt-3 pb-3 container-fluid col-xs-12 d-lg-none p-0 m-0">
-    <div class="green text-white mx-auto p-0 m-0">
+<div class="row home-green pt-3 pb-3 col-lg-12 p-0 m-0">
+    <div class="green text-white mx-auto p-0 m-0 mb-lg-0 pt-lg-2">
         <?php echo $txt_cta_green;?>
     </div>
-    <div class="col-12 mb-3 rounded d-flex align-items-center justify-content-center mx-auto"> 
-        <a class="btn btn-default btn-home-green pl-5 pr-5 " href="<?= get_permalink($mod); ?>"role="button">
+    <div class="col-12 col-lg-12 mb-3 pt-lg-0 mt-lg-0 rounded d-flex align-items-center justify-content-center mx-auto"> 
+        <a class="btn btn-default btn-home-green pl-5 pr-5 col-lg-4 p-lg-3 m-lg-3" 
+            href="<?= get_permalink($mod); ?>"role="button">
             <?php echo $txt_btn_green;?>
         </a> 
     </div>

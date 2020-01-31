@@ -8,10 +8,10 @@
 </div><!-- /.container -->
 <footer class="footer">
 	<!--TEXTO Y BOTON-->
-<div class="col-12 pl-3 pt-4 texto-footer">
+<div class="col-12 pl-3 pt-4 texto-footer d-lg-none">
 	Need more info?
 </div>
-<div id="#contacto" class="col-12 col-xs-12 d-lg-none d-md-flex">
+<div id="contacto" class="col-12 col-xs-12 d-lg-none d-md-flex">
 	<form class="form-inline">
 		<div class="form-group col-10 p-0 m-0">
 			<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 
@@ -27,7 +27,7 @@
 </div>
 
 	<!--SOCIAL MEDIA-->
-<div class="col-12 row mx-auto p-3">
+<div class="col-12 row mx-auto p-3 d-lg-none">
 	
 	<div class="col-2 m-2">
 		<a href="<?php echo $url_int; ?>" target="_blank">
@@ -51,7 +51,7 @@
 	</div>
 </div>
 	<!--MENÚ-->
-	<div class="col-12 col-xs-12 d-lg-none d-md-flex flex-md-row p-0 justify-content-center">
+	<div class="col-12 d-lg-none d-md-flex flex-md-row p-0 justify-content-center">
 		<nav class="navbar navbar-ligth col-12 p-0 m-0">
 			<div class="col-12 p-0 pb-lg-0 pt-lg-0 h-100">
 				<!--div class=" d-flex flex-row col-12 p-0 pt-2 pb-1"-->
