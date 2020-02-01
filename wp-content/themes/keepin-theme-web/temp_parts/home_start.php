@@ -11,7 +11,7 @@ $subtitulo_header = get_option('subtitulo-header');
     </div>
 
     <div class="col-12 col-lg-6 text-center text-lg-right txt-home-start pt-2">
-       <?php echo $titulo_header; ?><br><?php echo $titulo_header; ?>
+       <?php echo $titulo_header; ?><br><?php echo $subtitulo_header; ?>
     </div>
     <div  class="col-12 col-lg-6 text-center txt-home-start pt-3">
         <button type="button" class="btn btn-home-start align-middle col-6 col-lg-6">Get Started!</button> 
