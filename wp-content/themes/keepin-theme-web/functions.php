@@ -81,7 +81,6 @@ function custom_keepinagency_register( $wp_customize ) {
         'type'     => 'dropdown-pages'
     ) );
 
-
     /******* SECCIÓN PARA SOCIALMEDIA FOOTER **********/
     $wp_customize->add_section( 'SocialMediaFoot', array(
         'title' => __( 'Social Media Footer', 'textdomain' ),
@@ -415,6 +414,37 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 3,
         'type' => 'text',
     ));
+
+    /******* SECCIÓN PARA TEXTOS FOOTER **********/
+    $wp_customize->add_section( 'TextoFooter', array(
+        'title' => __( 'Textos footer', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' => 7,
+    ));
+
+    //Setting y control TEXTOS FOOTER
+    $wp_customize->add_setting( 'informacion', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('informacion', array(
+        'label' => __( 'Titulo formulario', 'textdomain' ),
+        'section' => 'TextoFooter',
+        'priority' => 1,
+        'type' => 'text',
+    ));
+    //Setting y control TEXTO PLACEHOLDER
+    $wp_customize->add_setting( 'placeholder', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('placeholder', array(
+        'label' => __( 'Titulo input', 'textdomain' ),
+        'section' => 'TextoFooter',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+    
 
     /** Panel OPCIONES KEEPIN PAGE para el personalizador **/
     /*******************************************************/

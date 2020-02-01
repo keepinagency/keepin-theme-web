@@ -3,6 +3,9 @@
 	$url_fbk = get_option( 'faceurl', 'http://www.facebook.com' );
 	$url_lik = get_option( 'linkeurl', 'http://www.linkedin.com' );
 	$url_git = get_option( 'giturl', 'http://www.github.com' );
+	$informa = get_option('informacion');
+	$placeh = get_option('placeholder');
+
 ?>
 </div--><!-- /.row -->
 </div><!-- /.container -->
@@ -10,14 +13,14 @@
 	<div class="col-lg-12 d-lg-flex flex-lg-row flex-lg-column content-align-lg-end">
 			<!--TEXTO Y BOTON-->
 		<div class="col-12 pl-3 pt-4 texto-footer col-lg-6">
-			Need more info?
+		<?php echo $informa;?>
 		</div>
 		<div id="contacto" class="col-12 col-lg-6">
 
 			<form class="form-inline">
 				<div class="form-group col-10 p-0 m-0 ">
 					<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 
-										id="staticEmail2" placeholder="here@yourmail.com">
+										id="staticEmail2" placeholder="<?php echo $placeh;?>">
 				</div>
 
 				<div class="form-group col-2 p-0 m-0 ">
