@@ -5,9 +5,8 @@ Template Post Type: page
 Esta es la plantilla para el Portafolio del menu
  */
 get_header();
-    
+$imgportfolio = get_option( 'imgportfolio', '' );
 $paginacion_nueva = get_query_var('paged');
-
 $nuevo_arreglo = new WP_Query(array(
 	'post_type'=>'post', 
     'category_name' => 'portfolio',
@@ -19,7 +18,7 @@ $nuevo_arreglo = new WP_Query(array(
 <div class="row container-fluid col-12 d-lg-none p-0 m-0">
     <?php if ($nuevo_arreglo->have_posts()) : ?>
         <div class="col-12 p-2 text-center">
-            <img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>">
+            <img src="<?php echo $imgportfolio /*get_template_directory_uri() . '/img/ico-instagram.png'*/; ?>">
         </div>
         <div class="col-12 text-center title_portfpage">
             <?php the_title(); ?>

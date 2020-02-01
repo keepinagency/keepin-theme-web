@@ -21,7 +21,7 @@ get_header();
         <?php
         if ($nuevo_arreglo->have_posts()) :?>
             <div class="col-12 p-2 text-center">
-                <img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>">
+                <img src="<?php echo $imgteam; ?>">
             </div>
             <div class="col-12 text-center titleteam_page">
                 <?php the_title(); ?>
@@ -47,7 +47,13 @@ get_header();
             }
             ?>
                 <div class="col-<?=$col;?> text-center mx-<?=$cla?> p-1">
-                    <?php the_post_thumbnail('medium');?>
+                    <?php the_post_thumbnail('medium');
+                    //the_post_thumbnail('medium', ['class' => 'img-portafolio', 'title' => 'Portafolio imagen']);?>
+                    
+                    <!--div class="d-flex justify-content-center col-12 pt-2 pb-4 m-0">
+                        <img src="<?php echo get_the_post_thumbnail_url('', 
+                                ['class' => 'img-photo_team', 'title' => 'Portafolio imagen']); ?>">
+                    </div-->
                     <div class="col-12 text-center contteam_post ">
                         <a class="text-center titleteam_post text-white" href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
@@ -65,3 +71,4 @@ get_header();
 
 </div><!-- /.blog-main -->
 <?php get_footer(); ?>
+

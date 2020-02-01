@@ -5,7 +5,7 @@ Template Post Type: page
 Esta es la plantilla para el Team del menu
 */
 get_header();
-$imgteam = get_option( 'imgteam', '' );
+$imgservices = get_option( 'imgservices', '' );
 $nuevo_arreglo = new WP_Query(array(
 	'post_type'=>'post', 
     'category_name' => 'services',
@@ -17,7 +17,7 @@ $nuevo_arreglo = new WP_Query(array(
     <div class="row col-xs-12 col-lg-none p-0 m-0">
         <?php if ($nuevo_arreglo->have_posts()) :?>
             <div class="col-12 p-2 text-center">
-                <img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>">
+                <img src="<?php echo $imgservices; ?>">
             </div>
             <div class="subourpage col-12 text-center">
                 <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>

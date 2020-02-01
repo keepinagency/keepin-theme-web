@@ -145,12 +145,6 @@ function custom_keepinagency_register( $wp_customize ) {
         'type'     => 'dropdown-pages'
     ) );
 
-    
-
-
-
-
-   
     /** el Setting FaceIcono FOOTER **/
     $wp_customize->add_setting( 'facelogo', array (
         'default'        => get_template_directory_uri() . '/img/ico-facebook.png',
@@ -381,6 +375,34 @@ function custom_keepinagency_register( $wp_customize ) {
         'section' => 'citahome',
         'priority' => 1,
         'type' => 'textarea',
+    ));
+    /******* SECCIÓN PARA TEXTO HEADER **********/
+    $wp_customize->add_section( 'Textoheader', array(
+        'title' => __( 'Texto del header', 'textdomain' ),
+        'panel' => 'keepinagency',
+        'priority' =>7,
+    ));
+    //Setting y control TITULO HEADER
+      $wp_customize->add_setting( 'titulo-header', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('titulo-header', array(
+        'label' => __( 'Titulo para el header', 'textdomain' ),
+        'section' => 'Textoheader',
+        'priority' => 1,
+        'type' => 'text',
+    ));
+    //Setting y control SUBTITULO HEADER
+    $wp_customize->add_setting( 'subtitulo-header', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('subtitulo-header', array(
+        'label' => __( 'Sub-Titulo para el header', 'textdomain' ),
+        'section' => 'Textoheader',
+        'priority' => 2,
+        'type' => 'text',
     ));
 
     /** Panel OPCIONES KEEPIN PAGE para el personalizador **/

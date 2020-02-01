@@ -7,54 +7,59 @@
 </div--><!-- /.row -->
 </div><!-- /.container -->
 <footer class="footer">
-	<!--TEXTO Y BOTON-->
-<div class="col-12 pl-3 pt-4 texto-footer d-lg-none">
-	Need more info?
-</div>
-<div id="contacto" class="col-12 col-xs-12 d-lg-none d-md-flex">
-	<form class="form-inline">
-		<div class="form-group col-10 p-0 m-0">
-			<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 
-								id="staticEmail2" placeholder="here@yourmail.com">
+	<div class="col-lg-12 d-lg-flex flex-lg-row flex-lg-column content-align-lg-end">
+			<!--TEXTO Y BOTON-->
+		<div class="col-12 pl-3 pt-4 texto-footer col-lg-6">
+			Need more info?
 		</div>
-		<div class="form-group col-2 p-0 m-0 ">
-			<button type="submit" class="btn p-0 m-0">
-				<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " 
-				class="img-btn-foot">
-			</button>
-		</div>
-	</form>
-</div>
+		<div id="contacto" class="col-12 col-lg-6">
 
-	<!--SOCIAL MEDIA-->
-<div class="col-12 row mx-auto p-3 d-lg-none">
-	
-	<div class="col-2 m-2">
-		<a href="<?php echo $url_int; ?>" target="_blank">
-			<img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
-		</a>
+			<form class="form-inline">
+				<div class="form-group col-10 p-0 m-0 ">
+					<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 
+										id="staticEmail2" placeholder="here@yourmail.com">
+				</div>
+
+				<div class="form-group col-2 p-0 m-0 ">
+					<button type="submit" class="btn p-0 m-0">
+						<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " 
+						class="img-btn-foot">
+					</button>
+				</div>
+
+			</form>
+		</div>
 	</div>
-	<div class="col-2 m-2">
-		<a href="<?php echo $url_fbk; ?>" target="_blank">
-			<img src="<?php echo get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
-		</a>
+
+		<!--SOCIAL MEDIA-->
+	<div class="col-12 row mx-auto p-3 col-lg-6 text-lg-rigth p-lg-0 m-lg-0">
+		
+		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
+			<a href="<?php echo $url_int; ?>" target="_blank">
+				<img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
+			</a>
+		</div>
+		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
+			<a href="<?php echo $url_fbk; ?>" target="_blank">
+				<img src="<?php echo get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
+			</a>
+		</div>
+		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
+			<a href="<?php echo $url_lik;?> " target="_blank">
+				<img src="<?php echo get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
+			</a>
+		</div>
+		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
+			<a href="<?php echo $url_git;?>" target="_blank">
+				<img src="<?php echo get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
+			</a>
+		</div>
 	</div>
-	<div class="col-2 m-2">
-		<a href="<?php echo $url_lik;?> " target="_blank">
-			<img src="<?php echo get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
-		</a>
-	</div>
-	<div class="col-2 m-2">
-		<a href="<?php echo $url_git;?>" target="_blank">
-			<img src="<?php echo get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
-		</a>
-	</div>
-</div>
+
 	<!--MENÚ-->
-	<div class="col-12 d-lg-none d-md-flex flex-md-row p-0 justify-content-center">
+	<div class="col-12 d-md-flex flex-md-row p-0 justify-content-center">
 		<nav class="navbar navbar-ligth col-12 p-0 m-0">
 			<div class="col-12 p-0 pb-lg-0 pt-lg-0 h-100">
-				<!--div class=" d-flex flex-row col-12 p-0 pt-2 pb-1"-->
 				<?php
 					wp_nav_menu( array(
 						'container'       => 'div',
@@ -68,10 +73,10 @@
 				?>
 			</div>
 		</nav>
+	</div>
 	<!--DIR URL-->
-		<div class="dirurl-footer bg-white col-12 text-center pt-1 pb-3">
-			www.keepinagency.com
-		</div>
+	<div class="dirurl-footer bg-white col-12 text-center pt-1 pb-3 p-lg-2">
+		www.keepinagency.com
 	</div>
 	
 </footer>

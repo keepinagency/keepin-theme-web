@@ -498,5 +498,34 @@ h6, .h6 {
     .img-team{
       width: 40%;
     }
+    /*****************FOOTER******************/
+    .dirurl-footer{
+      color: #413a4d;
+      font-size: 1.3em;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .footer-menu{
+      background-color: #413a4d !important;
+    }
+    .footer-menu a{
+      color: #ffffff;
+      font-size: 1.3em;
+      font-family: "Conv_RobotoCondensed";
+    }
+    .footer{
+      background-color: #e0e0e0;
+    }
+    .img-btn-foot {
+      background-color: #66cc66 !important;
+    }
+    .texto-footer{
+      color: #413a4d;
+      font-size: 1.6em;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .texto-btn{
+      font-size: 1.3em;
+      font-family: "Conv_RobotoLightItalic";
+    }
 
 }
