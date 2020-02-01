@@ -1,6 +1,7 @@
 <?php
 $titulo_header = get_option('titulo-header');
 $subtitulo_header = get_option('subtitulo-header');
+$texto_ctastart = get_option('texto-cta-start');
 ?>
 <!--Luego de header-->
 <div class="row col-12 d-lg-12 d-flex flex-row flex-lg-row justify-content-center p-0 pt-2 m-0 mb-2">
@@ -14,7 +15,7 @@ $subtitulo_header = get_option('subtitulo-header');
        <?php echo $titulo_header; ?><br><?php echo $subtitulo_header; ?>
     </div>
     <div  class="col-12 col-lg-6 text-center txt-home-start pt-3">
-        <button type="button" class="btn btn-home-start align-middle col-6 col-lg-6">Get Started!</button> 
+        <button type="button" class="btn btn-home-start align-middle col-6 col-lg-6"><?php echo $texto_ctastart; ?></button> 
     </div>
     <div class="col-12 mt-4" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 </div>

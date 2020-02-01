@@ -404,6 +404,17 @@ function custom_keepinagency_register( $wp_customize ) {
         'priority' => 2,
         'type' => 'text',
     ));
+    //Setting y control TEXTO-CTA-START
+    $wp_customize->add_setting( 'texto-cta-start', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('texto-cta-start', array(
+        'label' => __( 'Sub-Titulo para el header', 'textdomain' ),
+        'section' => 'Textoheader',
+        'priority' => 3,
+        'type' => 'text',
+    ));
 
     /** Panel OPCIONES KEEPIN PAGE para el personalizador **/
     /*******************************************************/
