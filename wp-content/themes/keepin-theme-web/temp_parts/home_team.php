@@ -3,7 +3,7 @@
     $txt_cta_blue = get_option( 'txt-cta-blue', '' );
     $img_cta_blue = get_option( 'imgctablue', '' );
     $txt_btn_blue = get_option( 'txt-btn-blue', '' );
-    $url_btn_blue = get_option( 'url-btn-bue', 'http://www.keepinagency.com' );
+    $url_btn_blue = get_option( 'url-btn-blue', '' );
 ?>
 <div class="row home-team container-fluid d-lg-none p-0 m-0 bg-success">
     <div class="team text-white pt-4 pl-4 col-8 p-0 m-0
