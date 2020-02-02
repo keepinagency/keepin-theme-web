@@ -16,57 +16,58 @@ get_header();
     ));
     $total = $nuevo_arreglo->post_count;
 ?>
-<div class="container-fluid col-12 d-lg-none p-0 m-0">
-    <div class="row col-xs-12 col-lg-none p-0 m-0">
-        <?php
-        if ($nuevo_arreglo->have_posts()) :?>
-            <div class="col-12 p-2 text-center">
-                <img src="<?php echo $imgteam; ?>">
-            </div>
-            <div class="col-12 text-center titleteam_page">
-                <?php the_title(); ?>
-            </div>
-            <div class="col-12 text-center subteam_page">
-                <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
-            </div>
-            <div class="col-12 text-center pt-3 pr-4 pl-4 textteam_page">
-                <?php the_excerpt();?>
-            </div>
-    <div>
-    <div class="col-12 mt-5" style="background-color:#413a4d; height:10px;">&nbsp;</div>
-    <div class="row col-12 p-0 m-0">
-        <?php
-        $i=1;
-        while ($nuevo_arreglo->have_posts()):
-             $nuevo_arreglo->the_post();
-            if ($i==$total && ($total%2!=0) ){
-                $col=6;
-                $cla="auto";
-            }else{
-                $col=6;
-            }
-            ?>
-                <div class="col-<?=$col;?> text-center mx-<?=$cla?> p-1">
-                    <?php the_post_thumbnail('medium');
-                    //the_post_thumbnail('medium', ['class' => 'img-portafolio', 'title' => 'Portafolio imagen']);?>
-                    
-                    <!--div class="d-flex justify-content-center col-12 pt-2 pb-4 m-0">
-                        <img src="<?php echo get_the_post_thumbnail_url('', 
-                                ['class' => 'img-photo_team', 'title' => 'Portafolio imagen']); ?>">
-                    </div-->
-                    <div class="col-12 text-center contteam_post ">
-                        <a class="text-center titleteam_post text-white" href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                            <p class="col-12 subteam_post text-white"><?php echo get_post_meta($post->ID, 'titulo', true); ?></p>
-                        </a>
-                    </div>
+<div class="container-fluid col-12 p-0 m-0">
+    <?php
+    if ($nuevo_arreglo->have_posts()) :?>
+        <!-- Header Team -->
+        <div class="col-12 p-0 m-0">
+                <div class="col-12 p-2 text-center">
+                    <img src="<?php echo $imgteam; ?>">
                 </div>
+                <div class="col-12 text-center titleteam_page">
+                    <?php the_title(); ?>
+                </div>
+                <div class="col-12 text-center subteam_page">
+                    <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
+                </div>
+                <div class="col-12 text-center pt-3 pr-4 pl-4 textteam_page">
+                    <?php the_excerpt();?>
+                </div>
+        <div>
+
+        <div class="col-12 mt-5" style="background-color:#413a4d; height:10px;">&nbsp;</div>
+
+        <div class="row col-12 p-0 m-0 pl-lg-4 pr-lg-4 d-flex justify-content-around">
             <?php
-        $i++; 
-        endwhile;
-        ?>
-    </div>
-    <?php endif;?>
+            $i=1;
+            while ($nuevo_arreglo->have_posts()):
+                $nuevo_arreglo->the_post();
+                ?>
+                    <div class="col-6 col-lg-3 text-center p-3">
+                        
+                        
+                        <div class="imgteam_indv d-flex justify-content-center col-12 pt-2 pb-0 m-0"
+                            style="background-image: url('<?php echo get_the_post_thumbnail_url('');?>');">
+                            &nbsp;
+                        </div>
+
+                        <div class="col-12 text-center contteam_post 
+                                    d-flex flex-column justify-content-center p-0 m-0">
+                            <span class="text-center titleteam_post text-white ">
+                                <?php the_title(); ?>
+                            </span>
+                            <span class="col-12 subteam_post text-white">
+                                <?php echo get_post_meta($post->ID, 'titulo', true); ?>
+                            </span>
+                        </div>
+
+                    </div>
+                <?php
+            endwhile;
+            ?>
+        </div>
+    <?php 
+    endif;?>
 </div>
 
 </div><!-- /.blog-main -->

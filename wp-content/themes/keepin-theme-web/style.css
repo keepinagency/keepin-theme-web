@@ -241,35 +241,57 @@ h6, .h6 {
     font-size: 1.8em;
     font-family: "Conv_RobotoBoldCondensed";
   }
+}
 /*****************************
 ****************************** TEAM PAGE
 *****************************/
-  .titleteam_page{
-    font-family: "Conv_RobotoRegular";
-    font-size: 1.5rem;
-    color: #413a4d;
+
+.titleteam_page{
+  font-family: "Conv_RobotoRegular";
+  font-size: 1.5rem;
+  color: #413a4d;
+}
+.subteam_page{
+  font-family: "Conv_RobotoRegular";
+  font-size: 1.5rem;
+  color: #413a4d;
+}
+.textteam_page{
+  font-family: "Conv_RobotoBoldCondensed";
+  font-size: 1.2rem;
+  color: #413a4d;
+}
+.titleteam_post{
+  font-family: "Conv_RobotoBoldCondensed";
+  font-size: 1.8rem;
+}
+.subteam_post{
+  font-family: "Conv_RobotoCondensed";
+  font-size: 1.2rem;
+}
+.contteam_post{
+  background-color: #66cc66;
+  min-height: 100px;
+}
+.imgteam_indv{
+  min-height:500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .contteam_post{
+    min-height: 60px;
   }
-  .subteam_page{
-    font-family: "Conv_RobotoRegular";
-    font-size: 1.5rem;
-    color: #413a4d;
-  }
-  .textteam_page{
-    font-family: "Conv_RobotoBoldCondensed";
-    font-size: 1.2rem;
-    color: #413a4d;
+  .imgteam_indv{
+    min-height:300px;
   }
   .titleteam_post{
-    font-family: "Conv_RobotoBoldCondensed";
     font-size: 1.3rem;
   }
   .subteam_post{
-    font-family: "Conv_RobotoCondensed";
     font-size: 0.8rem;
-  }
-  .contteam_post{
-    background-color: #66cc66;
-    min-height: 60px;
   }
 }
 
