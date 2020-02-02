@@ -10,52 +10,48 @@
 </div--><!-- /.row -->
 </div><!-- /.container -->
 <footer class="footer">
-	<div class="col-lg-12 d-lg-flex flex-lg-row flex-lg-column content-align-lg-end">
-			<!--TEXTO Y BOTON-->
-		<div class="col-12 pl-3 pt-4 texto-footer col-lg-6">
-		<?php echo $informa;?>
+	<div class="col-12 d-lg-flex flex-lg-row-reverse pl-lg-5">
+		<div class="col-12 col-lg-6 pb-lg-4">
+				<!--TEXTO Y BOTON-->
+			<div class="col-12 col-lg-10 pl-3 pt-4 texto-footer">
+				<?php echo $informa;?>
+			</div>
+			<div class="col-12 col-lg-10 ">
+				<form class="form-inline">
+					<div class="form-group col-10 p-0 m-0">
+						<input type="text" 
+								class="form-control-plaintext bg-white texto-btn pl-3 pt-2 " 
+								placeholder="<?php echo $placeh;?>">
+					</div>
+
+					<div class="form-group col-2 p-0 m-0 ">
+						<button type="submit" class="btn p-0 m-0">
+							<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " 
+							class="img-btn-foot">
+						</button>
+					</div>
+
+				</form>
+			</div>
 		</div>
-		<div id="contacto" class="col-12 col-lg-6">
-
-			<form class="form-inline">
-				<div class="form-group col-10 p-0 m-0 ">
-					<input type="text" class="form-control-plaintext bg-white texto-btn pl-3 pt-2" 
-										id="staticEmail2" placeholder="<?php echo $placeh;?>">
-				</div>
-
-				<div class="form-group col-2 p-0 m-0 ">
-					<button type="submit" class="btn p-0 m-0">
-						<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " 
-						class="img-btn-foot">
-					</button>
-				</div>
-
-			</form>
-		</div>
-	</div>
 
 		<!--SOCIAL MEDIA-->
-	<div class="col-12 row mx-auto p-3 col-lg-6 text-lg-rigth p-lg-0 m-lg-0">
-		
-		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
-			<a href="<?php echo $url_int; ?>" target="_blank">
+		<div class="col-12 p-0 pt-3 pb-3 d-flex flex-row align-items-center
+					col-lg-6 pl-lg-4 justify-content-lg-center">
+
+			<a href="<?php echo $url_int; ?>" target="_blank" class="pl-4">
 				<img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
 			</a>
-		</div>
-		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
-			<a href="<?php echo $url_fbk; ?>" target="_blank">
+			<a href="<?php echo $url_fbk; ?>" target="_blank" class="pl-4">
 				<img src="<?php echo get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
 			</a>
-		</div>
-		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
-			<a href="<?php echo $url_lik;?> " target="_blank">
+			<a href="<?php echo $url_lik;?> " target="_blank" class="pl-4">
 				<img src="<?php echo get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
 			</a>
-		</div>
-		<div class="col-2 m-2 col-lg-3 p-lg-0 m-lg-0">
-			<a href="<?php echo $url_git;?>" target="_blank">
+			<a href="<?php echo $url_git;?>" target="_blank" class="pl-4">
 				<img src="<?php echo get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
 			</a>
+
 		</div>
 	</div>
 
