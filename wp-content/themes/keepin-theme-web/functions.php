@@ -508,7 +508,25 @@ function custom_keepinagency_register( $wp_customize ) {
         'settings'   => 'imgblog',
         'priority'   => 4,
     )));
-    
+    /***************** SECCIÓN PARA BTN HOME 03 *********************/
+    $wp_customize->add_section( 'btn-page', array(
+        'title' => __( 'Texto CTA OurServices', 'textdomain' ),
+        'panel' => 'keepin-agency',
+        'priority' => 2,
+    ));
+
+    /** Setting CTA-TXT *********
+     **      HOME 03    ********/
+    $wp_customize->add_setting( 'texto-cta-ourpage', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('texto-cta-ourpage', array(
+        'label' => __( 'Texto CTA Home 03 - Blue', 'textdomain' ),
+        'section' => 'btn-page',
+        'priority' => 1,
+        'type' => 'text',
+    ));
 }
 
 /************** METABOXES PARA EL TITULO ****************

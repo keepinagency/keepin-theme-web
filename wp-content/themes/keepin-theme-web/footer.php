@@ -3,6 +3,12 @@
 	$url_fbk = get_option( 'faceurl', 'http://www.facebook.com' );
 	$url_lik = get_option( 'linkeurl', 'http://www.linkedin.com' );
 	$url_git = get_option( 'giturl', 'http://www.github.com' );
+
+	$instalogo = get_option( 'instalogo', '/img/ico-instagram.png' );
+	$facelogo = get_option( 'facelogo', '/img/ico-facebook.png' );
+	$linkelogo = get_option( 'linkelogo', '/img/ico-linkedin.png' );
+	$gitlogo = get_option( 'gitlogo', '' );
+	
 	$informa = get_option('informacion');
 	$placeh = get_option('placeholder');
 
