@@ -3,7 +3,7 @@
     $txt_cta_blue = get_option( 'txt-cta-blue', '' );
     $img_cta_blue = get_option( 'imgctablue', '' );
     $txt_btn_blue = get_option( 'txt-btn-blue', '' );
-    $url_btn_blue = get_option( 'url-btn-blue', 'http://www.keepinagency.com' );
+    $url_btn_blue = get_option( 'url-btn-bue', 'http://www.keepinagency.com' );
 ?>
 <div class="row home-team container-fluid d-lg-none p-0 m-0 bg-success">
     <div class="team text-white pt-4 pl-4 col-8 p-0 m-0
@@ -39,10 +39,11 @@
         </div>
         <div class="rounded col-lg-12"> 
             <a href="<?php $url_btn_blue; ?>" class="">
-                <button type="button" class="btn btn-default text-white 
-                        btn-home-team pl-lg-5 pr-lg-5">
+                <a type="button" class="btn btn-default text-white 
+                        btn-home-team pl-lg-5 pr-lg-5"
+                    href="<?=$url_btn_blue;?>">
                     <?php echo $txt_btn_blue;?>
-                </button> 
+                </a> 
             </a>
         </div>
     </div>

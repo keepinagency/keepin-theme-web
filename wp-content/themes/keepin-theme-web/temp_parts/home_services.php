@@ -8,7 +8,7 @@ $nuevo_arreglo = new WP_Query(array(
 ));
 ?>
 
-<div class="col-12 row">
+<div id="services" class="col-12 row">
     <?php if ($nuevo_arreglo->have_posts()) : 
         while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
             <div class="pt-2 col-12 col-lg-6 p-lg-0 m-lg-0 d-lg-flex 
@@ -16,11 +16,13 @@ $nuevo_arreglo = new WP_Query(array(
                         pl-lg-5 pr-lg-5">
 
                 <div class="p-0 m-0 col-lg-12 d-flex pl-lg-5 pr-lg-5">
-                    <a class="titulo_services " href="<?php the_permalink(); ?>"><?php the_title(); ?>
+                    <!--a class="titulo_services " href="<?php the_permalink(); ?>"-->
+                    <span class="titulo_services">
+                        <?php the_title(); ?>
                         <div class="sub-tit p-0 m-0 col-lg-12 ">
                             <?php echo get_post_meta($post->ID, 'titulo', true); ?>
                         </div>
-                    </a>
+                    </span>
                 </div>
                 <div class="p-0 m-0 pt-2 post_services col-lg-12 d-flex pl-lg-5 pr-lg-5">
                     <?php the_excerpt();?>

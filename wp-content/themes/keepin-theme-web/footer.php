@@ -85,6 +85,61 @@
 	</div>
 	
 </footer>
+
+<!-- Formulario Modal -->
+<div class="modal fade" id="formmasinf" tabindex="-1" role="dialog" 
+			aria-labelledby="formmasinfLabel" aria-hidden="true" style="z-index:30000 !important;">
+	<div class="modal-dialog" role="document" style="z-index:31000 !important;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">
+					Indique su correo para contactarle:
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- BODY MODAL --->
+				<form name="from-correo" id="formcorreo" class="d-flex flex-column justify-content-center 
+								align-items-center flex-wrap h-100 p-0 m-0 needs-validation" 
+							method="post"
+							action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" novalidate>
+					<div class="h-0 w-100 w-lg-75 d-flex flex-row pb-2">
+						<div class="form-group col-12 p-0 m-0">
+							<!--label for="correo" class="col-12 col-form-label-sm text-center p-0 m-0 ">
+								Correo Electrónico:
+							</label-->
+							<input class="form-control form-control-sm text-center p-0 m-0" type="email"
+									value="" placeholder="ej: sucorreo@correo.com"
+									id="correo" name="correo" required>
+						</div>	
+					</div>
+
+					<div class="h-0 w-100 w-lg-75 d-flex flex-row p-3 justify-content-center">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>&nbsp;&nbsp;
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</div>
+				</form>
+				
+			</div>
+			<div class="modal-footer">
+				&nbsp;
+				<!--button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				<button type="button" class="btn btn-primary">Enviar Reserva</button-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	(function() {
+		$('#formmasinf').on('show.bs.modal', function (event) {
+			/**/
+		});
+	});
+</script>
+
 <?php wp_footer(); ?>
 </body>
 </html>

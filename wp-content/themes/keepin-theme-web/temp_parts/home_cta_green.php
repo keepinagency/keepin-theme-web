@@ -16,9 +16,10 @@
         <?php echo $txt_cta_green;?>
     </div>
     <div class="col-12 col-lg-12 mb-3 pt-lg-0 mt-lg-0 rounded d-flex align-items-center justify-content-center mx-auto"> 
-        <a class="btn btn-default btn-home-green pl-5 pr-5 col-lg-4 p-lg-3 m-lg-3" 
-            href="<?= get_permalink($mod); ?>"role="button">
+        <button type="submit" 
+            class="btn btn-default btn-home-green pl-5 pr-5 col-lg-4 p-lg-3 m-lg-3"
+            data-toggle="modal" data-target="#formmasinf" >
             <?php echo $txt_btn_green;?>
-        </a> 
+        </button>
     </div>
 </div>

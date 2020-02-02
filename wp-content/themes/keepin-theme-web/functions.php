@@ -321,11 +321,11 @@ function custom_keepinagency_register( $wp_customize ) {
     ));
     /** Setting BTN-URL *********
      **      HOME 03    ********/
-    $wp_customize->add_setting( 'url-btn-bue', array(
+    $wp_customize->add_setting( 'url-btn-blue', array(
         'type' => 'option',
         'capability' => 'edit_theme_options',
     ));
-    $wp_customize->add_control('url-btn-bue', array(
+    $wp_customize->add_control('url-btn-blue', array(
         'label' => __( 'URL CTA Home 03 - Blue', 'textdomain' ),
         'section' => 'blue',
         'priority' => 2,
