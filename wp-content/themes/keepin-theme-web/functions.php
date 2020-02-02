@@ -522,7 +522,7 @@ function custom_keepinagency_register( $wp_customize ) {
         'capability' => 'edit_theme_options',
     ));
     $wp_customize->add_control('texto-cta-ourpage', array(
-        'label' => __( 'Texto CTA Home 03 - Blue', 'textdomain' ),
+        'label' => __( 'Texto CTA OurServices', 'textdomain' ),
         'section' => 'btn-page',
         'priority' => 1,
         'type' => 'text',
