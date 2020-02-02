@@ -50,7 +50,6 @@ h6, .h6 {
   /*color: #333;*/
 }
 /** Override Bootstrap's default container. **/
-
 @media (min-width: 1200px) {
   *{
     color: #413a4d;
@@ -58,7 +57,7 @@ h6, .h6 {
     margin: 0px;
   }
   .container {
-    padding: 0px;
+    /*padding: 0px;
     margin: 0px;
     /*width: 100%;
     /*border: thin solid #B0B;*/
@@ -88,7 +87,13 @@ h6, .h6 {
 /*****************************
 ****************************** HEADER START
 *****************************/
+.header-start{
+  min-height: 250px;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .header-start{
+    min-height: 0px;
+  }
   .txt-home-start{
     font-family: "Conv_RobotoBoldCondensed";
     font-size: 1.8rem;
@@ -376,9 +381,7 @@ h6, .h6 {
     .area-menu{
       text-align: right;
     }
-    .leo{
-      text-align: center;
-    }
+    
     /*ABOUTUS_HOME*/
     .middle_aboutus_home{
       border-left: solid thin #66cc66;

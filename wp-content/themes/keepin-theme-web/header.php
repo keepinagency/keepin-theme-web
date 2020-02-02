@@ -18,9 +18,11 @@
 <div class="container-fluid p-0 m-0 h-100">
 
     <div class="header p-0 m-0 row ">
-        <nav class="navbar navbar-light col-12 p-0 m-0  ">
-            
-            <div class="col-10 col-lg-6 col-md-6 p-3 m-0 leo">
+        <nav class="navbar navbar-light col-12 ">
+            <div class="d-none d-lg-block col-lg-1 ">
+                &nbsp;
+            </div>
+            <div class="col-10 col-lg-5 p-3 pl-lg-0 m-0 ">
                 <a class="navbar-brand m-0 p-0"  href="<?php echo get_home_url(); ?>">
                     <?php
                         $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -29,6 +31,7 @@
                     ?>
                 </a>
             </div>
+
             <div class="col-2 p-0 m-0 d-lg-none">
                 <button class="navbar-toggler d-md-block d-lg-none p-2"  type="button"
                         data-toggle="collapse" 
@@ -41,18 +44,22 @@
             </div>
             
             <!--Area menu   area-menu   -->
-            <div class="col-12 col-lg-6 container navbar-expand-lg navbar-light area-menu">         
+            <div class="col-12 col-lg-5 navbar-expand-lg navbar-light area-menu m-0 p-0">         
                 <?php
                     wp_nav_menu( array(
                         'container'       => 'div',
-                        'container_class' => 'collapse navbar-collapse area-menu col-12 col-lg-6 d-lg-block p-0 m-0 h-100 navbar-expand-lg navbar-light',
+                        'container_class' => 'collapse navbar-collapse area-menu d-lg-block p-0 pl-lg-4 m-0 
+                                              h-100 d-lg-flex justify-content-end navbar-expand-lg navbar-light',
                         'container_id'    => 'menukeepin',
-                        'items_wrap'      => '<ul id="%1$s" class="%2$s navbar-nav mt-0 mt-lg-0 w-100 h-100 align-content-center">%3$s</ul>',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s navbar-nav mt-0 mt-lg-0 align-content-center">%3$s</ul>',
                         'theme_location'  => 'header-menu',
                         'menu_class'      => 'header-menu',
                         'walker'          => new WP_Bootstrap_Navwalker())
                     );
                 ?>
+            </div>
+            <div class="d-none d-lg-block col-lg-1 ">
+                &nbsp;
             </div>
         </nav>
         <!--/div-->
