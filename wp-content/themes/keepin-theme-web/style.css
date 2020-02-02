@@ -530,5 +530,45 @@ h6, .h6 {
       font-size: 1.3em;
       font-family: "Conv_RobotoLightItalic";
     }
+    /*****************SERVICES-PAGE******************/
+    .subourpage{
+      font-family: "Conv_RobotoCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .sub_ourpage{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .text-ourpage{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.3rem;
+      color: #413a4d;
+    }
+    .btn-ourpage{
+      background-color: #66cc66;
+    }
+    .btn-ourpage:hover{
+      font-size: 1.3rem;
+    }
+    .tit_ourpage{
+      color: #66cc66;
+      font-size: 1.8em;
+      font-family: "Conv_RobotoBoldCondensed";
+      line-height: 1.1em;
+    }
+    .sub-ourpage{
+      color: #66cc66;
+      font-family: "Conv_RobotoBoldCondensed";
+      line-height: 1.1em;
+    }
+    .tit_ourpage:hover{
+      text-decoration-line: none;
+      color: #66cc66;
+    }
+    .sub-ourpage:hover{
+      text-decoration-line: none;
+    }
 
 }
