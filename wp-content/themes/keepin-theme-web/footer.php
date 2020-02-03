@@ -25,11 +25,11 @@
 			<div class="col-12 col-lg-10 ">
 				<form class="form-inline"
 						method="post"
-						action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" novalidate>
+						action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" validate>
 					<div class="form-group col-10 p-0 m-0">
-						<input type="text" id="correo" name="correo"
+						<input type="email" id="correo" name="correo"
 								class="form-control-plaintext bg-white texto-btn pl-3 pt-2 " 
-								placeholder="<?php echo $placeh;?>">
+								placeholder="<?php echo $placeh;?>" required>
 					</div>
 
 					<div class="form-group col-2 p-0 m-0 ">
@@ -106,7 +106,7 @@
 				<form name="from-correo" id="formcorreo" class="d-flex flex-column justify-content-center 
 								align-items-center flex-wrap h-100 p-0 m-0 needs-validation" 
 							method="post"
-							action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" novalidate>
+							action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" validate>
 					<div class="h-0 w-100 w-lg-75 d-flex flex-row pb-2">
 						<div class="form-group col-12 p-0 m-0">
 							<!--label for="correo" class="col-12 col-form-label-sm text-center p-0 m-0 ">
