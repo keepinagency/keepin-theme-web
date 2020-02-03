@@ -17,8 +17,10 @@ $texto_ctastart = get_option('texto-cta-start');
     </div>
     <div  class="col-12 col-lg-6 text-center txt-home-start pt-3 pb-4 pb-lg-0 ">
         <button type="button" 
-            class="btn btn-home-start align-middle col-6 col-lg-6">
-        <?php echo $texto_ctastart; ?></button> 
+            class="btn btn-home-start align-middle col-6 col-lg-6"
+            data-toggle="modal" data-target="#formmasinf" >
+            <?php echo $texto_ctastart; ?>
+        </button>
     </div>
     <div class="col-12 mt-auto" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 </div>

@@ -23,9 +23,11 @@
 				<?php echo $informa;?>
 			</div>
 			<div class="col-12 col-lg-10 ">
-				<form class="form-inline">
+				<form class="form-inline"
+						method="post"
+						action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" novalidate>
 					<div class="form-group col-10 p-0 m-0">
-						<input type="text" 
+						<input type="text" id="correo" name="correo"
 								class="form-control-plaintext bg-white texto-btn pl-3 pt-2 " 
 								placeholder="<?php echo $placeh;?>">
 					</div>

@@ -16,7 +16,7 @@
     }else{*/
         //$base_url = $server.$port.'/'.$domain_name.'/index.php?solicitudmasinfo=1';
     //}
-    $base_url = $server.$port.'/index.php?solicitudmasinfo=1';
+    $base_url = $server.$port.'/';
 
     //die();
     $from = "web@keepinagency.com";
@@ -33,7 +33,7 @@
                     <title>KeepinAgency.com - Solicitud de mas información desde la Web</title>
                 </head>
                 <body>
-                    Nueva solicitud de más información desde www.consentidog.com:<br><br>
+                    Nueva solicitud de más información desde www.keepinagency.com:<br><br>
 
                     
                     Correo: <b>".$_POST['correo']."</b><br><br><br><br>
