@@ -45,9 +45,11 @@ $nuevo_arreglo = new WP_Query(array(
             while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
                 <div class="row d-flex flex-lg-row col-12 p-0 m-0 
                             pt-lg-0 pr-lg-2 pl-lg-2 col-lg-4">
-                    <div class="d-none d-sm-block col-lg-12 p-lg-0 cont-img pt-lg-3 pb-lg-1">
+                    <div class="d-none d-sm-block col-lg-12 p-lg-0 cont-img pt-lg-3 pb-lg-1"
+                        style="background-image: url('<?php echo get_the_post_thumbnail_url('');?>');">
+                    &nbsp;
                         <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('') ;?>
+                            <?php //the_post_thumbnail('blog') ;?>
                         </a>
                     </div>        
                     <div class="row contblog_post col-12 m-0 p-0">

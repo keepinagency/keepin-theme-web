@@ -9,7 +9,7 @@
             ?>
             <div class="row blog-post col-12 p-4 m-0">
                 <div class="col-lg-12 col-12 d-flex justify-content-lg-around p-lg-5">
-                    <?php the_post_thumbnail('');?>
+                    <?php the_post_thumbnail('large');?>
                 </div>
                 <div class="col-lg-2 d-none d-sm-block">
                     &nbsp

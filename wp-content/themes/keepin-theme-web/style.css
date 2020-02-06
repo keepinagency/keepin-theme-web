@@ -313,12 +313,23 @@ h6, .h6 {
   background-repeat: no-repeat;
   
 }
+.cont-img{
+  min-height:500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .contteam_post{
     min-height: 60px;
   }
   .imgteam_indv{
     min-height:300px;
+  }
+  .cont-img{
+    min-height:300px;
+    
   }
   .titleteam_post{
     font-size: 1.3rem;
