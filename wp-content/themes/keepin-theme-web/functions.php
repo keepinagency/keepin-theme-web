@@ -18,7 +18,10 @@ function keepin_wp_setup() {
         'header-text' => array( 'site-title', 'site-description' ),
     ) );
 }
-
+/****************FUNCION PARA EXTRACTO***********************/
+/*function custom_excerpt_length( $length){
+    return 20;
+}*/
 
 /*** Carga de Archivos CSS y Js para el site ***/
 function keepin_enqueue_styles() {
@@ -605,4 +608,5 @@ add_action( 'add_meta_boxes', 'meta_box_titulo' );                //Metaboxes pa
 add_action( 'save_post', 'guardar_titulo' );                     //guardar titulo metabox
 add_action( 'publish_post', 'guardar_titulo' );                  //Publicar título metabox en post
 
-?>
+//add_action( 'excerpt_length' , 'custom_excerpt_length', 999 );       EXTRACTO POST
+

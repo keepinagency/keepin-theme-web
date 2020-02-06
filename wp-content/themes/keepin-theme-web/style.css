@@ -190,9 +190,37 @@ h6, .h6 {
     font-family: "Conv_RobotoBoldCondensed";
   }
   .postblog_post{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: "Conv_RobotoRegular";
     line-height: 1.5rem;
+  }
+  .cont_pag_numbers{
+    width: 100%;
+    text-align: center;
+  }
+  span.page-numbers{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    padding: 10px;
+    border: thin solid #acacad;
+    border-radius: 5px;
+    margin-left: 20px;
+    color:#acacad;
+  }
+  a.page-numbers{
+    text-decoration: none;
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.2rem;
+    border: thin solid #66cc66;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 10px;
+    color:#66cc66;
+  }
+  a.page-numbers:hover{
+    background-color: rgba(40, 243, 40, 0.459);
   }
 }
 
@@ -528,6 +556,11 @@ h6, .h6 {
     .img-team{
       width: 40%;
     }
+    .subteam_page{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
     /*****************FOOTER******************/
     .dirurl-footer{
       color: #413a4d;
@@ -598,4 +631,105 @@ h6, .h6 {
       text-decoration-line: none;
     }
 
+    /*****************BLOG-PAGE******************/
+    .titleblog_page{
+      font-family: "Conv_RobotoRegular";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .subblog_page{
+      font-family: "Conv_RobotoCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .sub_blog_page{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .textblog_page{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.3rem;
+      color: #413a4d;
+    }
+    .titleblog_post{
+      font-size: 2.1rem;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .postblog_post{
+      font-size: 1.3rem;
+      font-family: "Conv_RobotoRegular";
+      line-height: 1.5rem;
+    }
+    .contblog_post:hover{
+      background-color: rgba(40, 243, 40, 0.486);
+    }
+    .cont_tit_blog{
+      min-height: 120px !important;
+      max-height: 200px !important;
+    }
+    .more-link{
+      font-size: 1.1rem;
+      font-family: "Conv_RobotoRegular";
+      color: #413a4d;
+    }
+    .contblog_post{
+      background-color: #66cc66;
+    }
+    .cont-img{
+      background-color: #ffffff;
+    }
+    /************************NAVEGACION PAGINA BLOG************************/
+    .cont_pag_numbers{
+      width: 100%;
+      text-align: center;
+    }
+    span.page-numbers{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-weight: bold;
+      font-size: 1em;
+      margin-left: 20px;
+      padding: 10px;
+      border: thin solid #acacad;
+      border-radius: 5px;
+      margin-left: 20px;
+      color:#acacad;
+    }
+    a.page-numbers{
+      text-decoration: none;
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.2rem;
+      border: thin solid #66cc66;
+      border-radius: 5px;
+      margin-left: 20px;
+      padding: 10px;
+      color:#66cc66;
+    }
+    a.page-numbers:hover{
+      background-color: rgba(40, 243, 40, 0.459);
+    }
+    /************************NAVEGACION PAGINA POST************************/
+    .nav-previous{
+      float: left;
+      text-align: right;
+      width: 50%;
+      padding: 5px;
+      
+    }
+    .nav-next{
+      float: right;
+      text-align: left;
+      width: 50%;
+      padding: 5px;
+    }
+    .nav_post{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.2rem;
+      color: #66cc66;
+      border: thin solid #66cc66;
+      border-radius: 5px;
+      padding: 10px;
+      
+
+    }
 }

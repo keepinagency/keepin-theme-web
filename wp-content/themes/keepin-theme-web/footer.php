@@ -15,7 +15,7 @@
 ?>
 </div--><!-- /.row -->
 </div><!-- /.container -->
-<footer class="footer">
+<footer id="contacto" class="footer">
 	<div class="col-12 d-lg-flex flex-lg-row-reverse pl-lg-5">
 		<div class="col-12 col-lg-6 pb-lg-4">
 				<!--TEXTO Y BOTON-->

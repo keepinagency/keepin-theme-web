@@ -42,29 +42,29 @@ $nuevo_arreglo = new WP_Query(array(
                 justify-content-center mx-auto pt-lg-5">
                 <?php while ($nuevo_arreglo->have_posts()) :
                     $nuevo_arreglo->the_post();?>
-                        <div class="pt-2 col-12 col-lg-6 p-lg-0 m-lg-0 d-lg-flex 
-                        flex-lg-row flex-lg-column align-self-lg-center
-                        pl-lg-5 pr-lg-5 pb-lg-5 mb-lg-5">
+                    <div class="pt-2 col-12 col-lg-6 p-lg-0 m-lg-0 d-lg-flex 
+                                flex-lg-row flex-lg-column align-self-lg-center
+                                pl-lg-5 pr-lg-5 pb-lg-5 mb-lg-5">
 
-                <div class="p-0 m-0 col-lg-12 d-flex">
-                    <a class="titulo_services pl-3" href="<?php the_permalink(); ?>"><?php the_title(); ?>
-                        <div class="sub-ourpage p-0 m-0 col-lg-12 ">
-                            <?php echo get_post_meta($post->ID, 'titulo', true); ?>
+                        <div class="p-0 m-0 col-lg-12 d-flex">
+                            <a class="titulo_services pl-3" href="<?php the_permalink(); ?>"><?php the_title(); ?>
+                                <div class="sub-ourpage p-0 m-0 col-lg-12 ">
+                                    <?php echo get_post_meta($post->ID, 'titulo', true); ?>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="pr-3 pl-3 pt-2 text-ourpage col-lg-12 d-flex">
-                    <?php the_excerpt();?>
-                </div>
-                <a class="col-12 text-lg-right" href="<?php the_permalink(); ?>">
-                    <div class="col-12 mb-3 rounded "> 
-                        <button type="button" class="btn btn-ourpage col-12 pl-5 pr-5 
-                                                    text-white col-lg-6">
-                            <?php echo $texctaour;?>
-                        </button> 
+                        <div class="pr-3 pl-3 pt-2 text-ourpage col-lg-12 d-flex">
+                            <?php the_excerpt();?>
+                        </div>
+                        <a class="col-12 text-lg-right" href="<?php the_permalink(); ?>">
+                            <div class="col-12 mb-3 rounded "> 
+                                <button type="button" class="btn btn-ourpage col-12 pl-5 pr-5 
+                                                            text-white col-lg-6">
+                                    <?php echo $texctaour;?>
+                                </button> 
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
                 <?php endwhile;?>
         <?php endif;?>
     </div>

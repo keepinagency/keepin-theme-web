@@ -20,7 +20,7 @@ get_header();
     <?php
     if ($nuevo_arreglo->have_posts()) :?>
         <!-- Header Team -->
-        <div class="col-12 p-0 m-0">
+        <div class="col-12 p-0 m-0 row">
                 <div class="col-12 p-2 text-center">
                     <img src="<?php echo $imgteam; ?>">
                 </div>
@@ -30,8 +30,14 @@ get_header();
                 <div class="col-12 text-center subteam_page">
                     <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
                 </div>
-                <div class="col-12 text-center pt-3 pr-4 pl-4 textteam_page">
+                <div class="col-lg-2 d-none d-sm-block">
+                    &nbsp
+                </div>
+                <div class="col-12 col-lg-8 text-center pt-3 pr-4 pl-4 textteam_page">
                     <?php the_excerpt();?>
+                </div>
+                <div class="col-lg-2 d-none d-sm-block">
+                    &nbsp
                 </div>
         <div>
 
@@ -43,7 +49,7 @@ get_header();
             while ($nuevo_arreglo->have_posts()):
                 $nuevo_arreglo->the_post();
                 ?>
-                    <div class="col-6 col-lg-3 text-center p-3">
+                    <div class="col-6 col-lg-4 text-center p-3">
                         
                         
                         <div class="imgteam_indv d-flex justify-content-center col-12 pt-2 pb-0 m-0"
