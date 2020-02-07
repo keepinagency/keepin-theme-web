@@ -1,0 +1,6 @@
+# Grupo 1
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+
+Sitemap: https://www.keepinagency.com//sitemap.xml
