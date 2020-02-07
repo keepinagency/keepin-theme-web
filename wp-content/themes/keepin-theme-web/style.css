@@ -149,7 +149,7 @@ h6, .h6 {
     color: #413a4d;
   }
   .subportfpage{
-    font-family: "Conv_RobotoRegular";
+    font-family: "Conv_RobotoBoldCondensed";
     font-size: 1.5rem;
     color: #413a4d;
   }
@@ -337,20 +337,19 @@ h6, .h6 {
   min-height: 100px;
 }
 .imgteam_indv{
-  min-height:500px;
+  min-height:620px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 .cont-img{
-  min-height:400px;
+  min-height:600px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .contteam_post{
     min-height: 60px;
@@ -534,6 +533,22 @@ h6, .h6 {
       font-family: "Conv_RobotoCondensed";
       color: #ffffff;
     }  
+    /*****************PORTFOLIO PAGE MENU******************/
+    .title_portfpage{
+      font-family: "Conv_RobotoCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .subportfpage {
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.5rem;
+      color: #413a4d;
+    }
+    .text-portfpage{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.3rem;
+      color: #413a4d;
+    }
     /*****************SERVICES******************/ 
     .titulo_services{
       color: #66cc66;
@@ -554,6 +569,7 @@ h6, .h6 {
       font-size: 1.1em;
       font-family: "Conv_RobotoBoldCondensed";
     }
+    
     /*****************HOME GREEN******************/
     .home-green{
       background-color:#66cc66 !important;
@@ -806,4 +822,9 @@ h6, .h6 {
   font-family: "Conv_RobotoRegular";
   color: #413a4d;
   text-indent: 2rem;
+}
+/*******************************************************/
+.portf{
+  background-color: #66cc66;
+  min-height: 150px;
 }
