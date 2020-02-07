@@ -222,6 +222,36 @@ h6, .h6 {
   a.page-numbers:hover{
     background-color: rgba(40, 243, 40, 0.459);
   }
+  /************************NAVEGACION PAGINA POST************************/
+  .nav-previous{
+    float: left;
+    text-align: right;
+    width: 50%;
+    padding: 5px;
+    
+  }
+  .nav-next{
+    float: right;
+    text-align: left;
+    width: 50%;
+    padding: 5px;
+  }
+  .nav_post{
+    font-family: "Conv_RobotoBoldCondensed";
+    font-size: 1.2rem;
+    color: #66cc66;
+    border: thin solid #66cc66;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  a.nav_post:hover{
+    background-color: rgba(40, 243, 40, 0.459);
+    text-decoration-line: none;
+  }
+  a.nav-next:hover{
+    background-color: rgba(40, 243, 40, 0.459);
+    text-decoration-line: none;
+  }
 }
 
 /*****************************
@@ -314,7 +344,8 @@ h6, .h6 {
   
 }
 .cont-img{
-  min-height:500px;
+  min-height:400px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,13 +360,19 @@ h6, .h6 {
   }
   .cont-img{
     min-height:300px;
-    
   }
   .titleteam_post{
     font-size: 1.3rem;
   }
   .subteam_post{
     font-size: 0.8rem;
+  }
+  /*********************SINGLE POST************************/
+  .cont_single{
+    font-size: 1rem !important;
+    font-family: "Conv_RobotoRegular";
+    color: #413a4d;
+    text-indent: 1.5rem;
   }
 }
 
@@ -431,6 +468,8 @@ h6, .h6 {
     .img-btn-foot {
       background-color: #66cc66 !important;
     }
+    
+
 }
 /***********************************************************
 ************************************************************
@@ -475,6 +514,10 @@ h6, .h6 {
       color: white;
       font-family: "Conv_RobotoBoldCondensed";
       float: left;
+    }
+    .btn-home-start:hover{
+      background-color: rgba(40, 243, 40, 0.486);
+     
     }
     /*****************PORTFOLIO******************/
     .portfolio{
@@ -526,6 +569,9 @@ h6, .h6 {
       font-family: "Conv_RobotoBoldCondensed";
       font-size: 1.8em;
     }
+    .btn-home-green:hover{
+      background-color: rgba(224, 224, 224, 0.7);
+    }
     /*****************HOME TEXTO******************/
     .texto-home{
       font-size: 1.5em;
@@ -547,14 +593,22 @@ h6, .h6 {
       font-family: "Conv_RobotoBoldCondensed";
       font-size: 1.7rem;
     }
+    .btn-home-grey:hover{
+     background-color: rgba(224, 224, 224, 0.7);
+    }
     .home_cta_grey_div:hover{
       text-decoration-line: none;
     }
+    
+    
     /*****************HOME TEAM******************/
     .btn-home-team{
       background-color: #2f5961;
       font-family: "Conv_RobotoBoldCondensed";
       font-size: 1.8em;
+    }
+    .btn-home-team:hover{
+      background-color: rgba(47, 89, 97, 0.5);
     }
     .home-team{
       background-color:#65c1d1 !important;
@@ -687,9 +741,7 @@ h6, .h6 {
     .contblog_post{
       background-color: #66cc66;
     }
-    .cont-img{
-      background-color: #ffffff;
-    }
+    
     /************************NAVEGACION PAGINA BLOG************************/
     .cont_pag_numbers{
       width: 100%;
@@ -725,7 +777,6 @@ h6, .h6 {
       text-align: right;
       width: 50%;
       padding: 5px;
-      
     }
     .nav-next{
       float: right;
@@ -740,7 +791,19 @@ h6, .h6 {
       border: thin solid #66cc66;
       border-radius: 5px;
       padding: 10px;
-      
-
     }
+    .nav_post:hover{
+      background-color: rgba(40, 243, 40, 0.459);
+    }
+    a:hover{
+      text-decoration: none;
+    }
+}
+
+/*********************SINGLE POST************************/
+.cont_single{
+  font-size: 1.2rem;
+  font-family: "Conv_RobotoRegular";
+  color: #413a4d;
+  text-indent: 2rem;
 }
