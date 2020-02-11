@@ -26,7 +26,8 @@ $nuevo_arreglo = new WP_Query(array(
                 }?>
                 <div class="aboutus_home <?=$classmiddle?> col-12 col-lg-4 
                             d-flex flex-row<?=$direccion?> flex-lg-column 
-                            p-0 m-0 p-lg-2 align-self-lg-center pr-lg-5 pl-lg-5">
+                            p-0 m-0 p-lg-2 align-self-lg-start pr-lg-5 pl-lg-5">
+
                         <div class="col-4 col-lg-12 img_aboutus_home <?=$justifytext?> 
                                     d-flex align-items-center justify-content-lg-center">
                             <?php the_post_thumbnail('medium'); ?>  
