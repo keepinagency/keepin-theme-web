@@ -189,11 +189,6 @@ h6, .h6 {
     font-size: 2.15rem;
     font-family: "Conv_RobotoBoldCondensed";
   }
-  .postblog_post{
-    font-size: 1.1rem;
-    font-family: "Conv_RobotoRegular";
-    line-height: 1.5rem;
-  }
   .cont_pag_numbers{
     width: 100%;
     text-align: center;
@@ -343,11 +338,14 @@ h6, .h6 {
   background-repeat: no-repeat;
 }
 .cont-img{
-  min-height:600px;
+  min-height:280px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.postblog_post {
+  color: #ffffff !important;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
@@ -358,7 +356,11 @@ h6, .h6 {
     min-height:300px;
   }
   .cont-img{
-    min-height:300px;
+    min-height:180px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .titleteam_post{
     font-size: 1.3rem;
@@ -642,6 +644,11 @@ h6, .h6 {
       font-size: 1.5rem;
       color: #413a4d;
     }
+    .textteam_page{
+      font-family: "Conv_RobotoBoldCondensed";
+      font-size: 1.3rem;
+      color: #413a4d;
+    }
     /*****************FOOTER******************/
     .dirurl-footer{
       color: #413a4d;
@@ -741,6 +748,7 @@ h6, .h6 {
       font-size: 1.3rem;
       font-family: "Conv_RobotoRegular";
       line-height: 1.5rem;
+      color: #ffffff !important;      
     }
     .contblog_post:hover{
       background-color: rgba(40, 243, 40, 0.486);
