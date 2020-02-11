@@ -16,7 +16,7 @@ get_header();
     ));
     $total = $nuevo_arreglo->post_count;
 ?>
-<div class="container-fluid col-12 p-0 m-0">
+<div class="container-fluid border border-danger col-12 p-0 m-0">
     <?php
     if ($nuevo_arreglo->have_posts()) :?>
         <!-- Header Team -->
