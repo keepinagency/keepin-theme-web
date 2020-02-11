@@ -41,7 +41,7 @@ get_header();
                 </div>
         <div>
 
-        <div class="row col-12 mt-2 col-lg-12" style="background-color:#413a4d; height:10px;">&nbsp;</div>
+        <div class="row col-12 mt-2 col-lg-12" style="background-color:#413a4d; height:10px; width:120%;">&nbsp;</div>
 
         <div class="row col-12 p-0 m-0 pl-lg-4 pr-lg-4 d-flex justify-content-around">
             <?php
