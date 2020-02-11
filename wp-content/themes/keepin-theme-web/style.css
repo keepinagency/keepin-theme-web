@@ -841,3 +841,8 @@ h6, .h6 {
   background-color: #413a4d;
   min-height: 180px;
 }
+.linea_team{
+  background: #413a4d;
+  height: 30px !important;
+  width: 100% !important;
+}
