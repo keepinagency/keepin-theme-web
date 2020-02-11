@@ -30,20 +30,20 @@ get_header();
                 <div class="col-12 text-center subteam_page">
                     <?php echo get_post_meta($post->ID, 'subtitulo', true); ?>
                 </div>
-                <div class="col-12 border border-danger d-flex flex-row p-0 m-0">
-                    <div class="col-lg-2 d-none d-lg-block border border-warning">
+                <div class="col-12 d-flex flex-row p-0 m-0">
+                    <div class="col-lg-2 d-none d-lg-block">
                         &nbsp
                     </div>
-                    <div class="col-12 col-lg-8 text-center pt-3 pr-4 pl-4 texttelllam_page ">
+                    <div class="col-12 col-lg-8 text-center pt-3 pr-4 pl-4 textteam_page ">
                         <?php the_excerpt();?>
                     </div>
-                    <div class="col-lg-2 d-none d-lg-block border border-warning">
+                    <div class="col-lg-2 d-none d-lg-block">
                         &nbsp
                     </div>
                 </div>
         <div>
 
-        <div class="col-12 mt-2 w-100 border border-warning" style="background-color:#413a4d; height:10px;">&nbsp;</div>
+        <div class="col-12 mt-2 w-100" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 
         <div class="row col-12 p-0 m-0 pl-lg-4 pr-lg-4 d-flex justify-content-around">
             <?php
