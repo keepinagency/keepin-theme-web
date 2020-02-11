@@ -75,7 +75,5 @@ get_header();
     <?php 
     endif;?>
 </div>
-
-</div><!-- /.blog-main -->
 <?php get_footer(); ?>
 
