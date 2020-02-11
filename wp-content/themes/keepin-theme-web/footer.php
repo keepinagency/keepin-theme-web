@@ -82,8 +82,8 @@
 		</nav>
 	</div>
 	<!--DIR URL-->
-	<div class="dirurl-footer bg-white col-12 text-center pt-1 pb-3 p-lg-2">
-		www.keepinagency.com
+	<div class="bg-white col-12 text-center pt-1 pb-3 p-lg-2">
+		<a class="dirurl-footer" href="https://www.keepinagency.com">www.keepinegancy.com</a> 
 	</div>
 	
 </footer>
@@ -109,9 +109,6 @@
 							action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" validate>
 					<div class="h-0 w-100 w-lg-75 d-flex flex-row pb-2">
 						<div class="form-group col-12 p-0 m-0">
-							<!--label for="correo" class="col-12 col-form-label-sm text-center p-0 m-0 ">
-								Correo Electrónico:
-							</label-->
 							<input class="form-control form-control-sm text-center p-0 m-0" type="email"
 									value="" placeholder="ej: sucorreo@correo.com"
 									id="correo" name="correo" required>
@@ -125,22 +122,9 @@
 				</form>
 				
 			</div>
-			<div class="modal-footer">
-				&nbsp;
-				<!--button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-				<button type="button" class="btn btn-primary">Enviar Reserva</button-->
-			</div>
 		</div>
 	</div>
 </div>
-
-<script>
-	(function() {
-		$('#formmasinf').on('show.bs.modal', function (event) {
-			/**/
-		});
-	});
-</script>
 
 <?php wp_footer(); ?>
 </body>

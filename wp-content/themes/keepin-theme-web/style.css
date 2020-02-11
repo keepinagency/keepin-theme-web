@@ -332,7 +332,7 @@ h6, .h6 {
   min-height: 100px;
 }
 .imgteam_indv{
-  min-height:620px;
+  min-height:650px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -652,7 +652,12 @@ h6, .h6 {
     /*****************FOOTER******************/
     .dirurl-footer{
       color: #413a4d;
-      font-size: 1.3em;
+      font-size: 1.4em;
+      font-family: "Conv_RobotoBoldCondensed";
+    }
+    .dirurl-footer:hover{
+      color: #66cc66;
+      font-size: 1.4em;
       font-family: "Conv_RobotoBoldCondensed";
     }
     .footer-menu{
@@ -835,4 +840,15 @@ h6, .h6 {
 .portf{
   background-color: #413a4d;
   min-height: 180px;
+}
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }
