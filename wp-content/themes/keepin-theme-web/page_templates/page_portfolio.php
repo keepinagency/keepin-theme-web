@@ -35,7 +35,7 @@ $nuevo_arreglo = new WP_Query(array(
         <div class="col-lg-2 d-none d-sm-block">
             &nbsp
         </div>
-        <div class="col-12 mt-2 mb-2" style="background-color:#413a4d; height:10px;">&nbsp;</div>
+        <div class="col-12 mt-2 mb-2 mb-lg-5" style="background-color:#413a4d; height:10px;">&nbsp;</div>
         <?php while ($nuevo_arreglo->have_posts()) : $nuevo_arreglo->the_post();?>
         <div class="col-lg-1 d-none d-sm-block">
             &nbsp
