@@ -524,14 +524,14 @@ h6, .h6 {
       min-height: 100px;
     }
     .titulo_portfolio{
-      font-size: 2.15rem;
+      font-size: 2.4rem;
       font-family: "Conv_RobotoBoldCondensed";
       color: #ffffff;
     }
     .post_portfolio{
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-family: "Conv_RobotoCondensed";
-      color: #ffffff;
+      text-decoration-color: #ffffff;
     }  
     /*****************PORTFOLIO PAGE MENU******************/
     .title_portfpage{
@@ -825,6 +825,6 @@ h6, .h6 {
 }
 /*******************************************************/
 .portf{
-  background-color: #66cc66;
-  min-height: 150px;
+  background-color: #413a4d;
+  min-height: 180px;
 }
