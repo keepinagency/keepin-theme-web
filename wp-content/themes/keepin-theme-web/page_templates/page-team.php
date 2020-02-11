@@ -20,7 +20,7 @@ get_header();
     <?php
     if ($nuevo_arreglo->have_posts()) :?>
         <!-- Header Team -->
-        <div class="col-12 p-0 m-0 row border border-warning ">
+        <div class="col-12 p-0 m-0 row ">
                 <div class="col-12 p-2 text-center">
                     <img src="<?php echo $imgteam; ?>">
                 </div>
@@ -41,7 +41,7 @@ get_header();
                 </div>
         <div>
 
-        <div class="col-12 mt-2" style="background-color:#413a4d; height:10px;">&nbsp;</div>
+        <div class="col-12 mt-2 border border-warning" style="background-color:#413a4d; height:10px;">&nbsp;</div>
 
         <div class="row col-12 p-0 m-0 pl-lg-4 pr-lg-4 d-flex justify-content-around">
             <?php
