@@ -80,6 +80,7 @@ $nuevo_arreglo = new WP_Query(array(
             <?php 
             endwhile; 
             wp_reset_postdata();
+            
             ?>
         </div>   
         <div class="cont_pag_numbers col-12 d-flex justify-content-center p-5">
