@@ -18,11 +18,12 @@
 
     <div class="col-12 mt-4 mb-4 rounded d-flex align-items-center justify-content-center mx-auto 
                 col-lg-6"> 
-        <a href="<?php $url_btn_blue; ?>" class="col-12 col-lg-12">
-            <button type="button" class="col-12 btn btn-default text-white 
-                    btn-home-team pl-5 pr-5 col-lg-12">
+        <a href="<?php $url_btn_blue; ?>">
+            <a type="button" class="btn btn-default text-white 
+                    btn-home-team pl-5 pr-5 col-12"
+                href="<?=$url_btn_blue;?>">
                 <?php echo $txt_btn_blue;?>
-            </button> 
+            </a> 
         </a>
     </div>
 </div>
