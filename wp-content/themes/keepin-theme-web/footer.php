@@ -48,16 +48,16 @@
 					col-lg-6 pl-lg-4 justify-content-lg-center">
 
 			<a href="<?php echo $url_int; ?>" target="_blank" class="pl-4">
-				<img src="<?php echo get_template_directory_uri() . '/img/ico-instagram.png'; ?>" alt="" id="">
+				<img src="<?php echo $instalogo; ?>" alt="" id="">
 			</a>
 			<a href="<?php echo $url_fbk; ?>" target="_blank" class="pl-4">
-				<img src="<?php echo get_template_directory_uri() . '/img/ico-facebook.png';?>" alt="" id="">
+				<img src="<?php echo $facelogo;?>" alt="" id="">
 			</a>
 			<a href="<?php echo $url_lik;?> " target="_blank" class="pl-4">
-				<img src="<?php echo get_template_directory_uri() . '/img/ico-linkedin.png';?>" alt="" id="">
+				<img src="<?php echo $linkelogo;?>" alt="" id="">
 			</a>
 			<a href="<?php echo $url_git;?>" target="_blank" class="pl-4">
-				<img src="<?php echo get_template_directory_uri() . '/img/ico-github.png';?>" alt="" id="">
+				<img src="<?php echo $gitlogo;?>" alt="" id="">
 			</a>
 
 		</div>
