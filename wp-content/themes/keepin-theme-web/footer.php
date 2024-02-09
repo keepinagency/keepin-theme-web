@@ -23,22 +23,20 @@
 				<?php echo $informa;?>
 			</div>
 			<div class="col-12 col-lg-10 ">
-				<form class="form-inline"
-						method="post"
-						action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" validate>
+				<form class="form-inline" method="post" action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" validate>
 					<div class="form-group col-10 p-0 m-0">
-						<input type="email" id="correo" name="correo"
-								class="form-control-plaintext bg-white texto-btn pl-3 pt-2 " 
-								placeholder="<?php echo $placeh;?>" required>
+						<input type="text" id="correo" name="correo" class="form-control-plaintext bg-white texto-btn pl-3 pt-2 " 
+								placeholder="<?php echo $placeh;?>" required >
 					</div>
 
-					<div class="form-group col-2 p-0 m-0 ">
-						<button type="submit" class="btn p-0 m-0">
-							<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " 
-							class="img-btn-foot">
+					<div class="form-group col-2 p-0 m-0">
+						<button type="submit" class="btn p-0 m-0" onClick="validarEmail();">
+							<img src="<?php echo get_template_directory_uri() . '/img/btn-vermas_trans_solo.png'; ?> " class="img-btn-foot">
 						</button>
 					</div>
-
+					<div class="d-flex justify-content-start pb-2">
+						<span id="mensajeError" style="font-size: 12px; color: red;"></span>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -83,7 +81,7 @@
 	</div>
 	<!--DIR URL-->
 	<div class="bg-white col-12 text-center pt-1 pb-3 p-lg-2">
-		<a class="dirurl-footer" href="https://www.keepinagency.com">www.keepinegancy.com</a> 
+		<a class="dirurl-footer" href="https://www.keepinagency.com">www.keepinagency.com</a> 
 	</div>
 	
 </footer>
@@ -125,7 +123,6 @@
 		</div>
 	</div>
 </div>
-
 <?php wp_footer(); ?>
 </body>
 </html>
